@@ -1,0 +1,417 @@
+{% extends 'web_templates/main_nav.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load fontawesome %}
+{% load timetags %}
+{% fontawesome_stylesheet %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% block main %}
+    <!-- Play like br nyr yoe yoe-->
+    <div _ngcontent-c39 class="tiles">
+        <div _ngcontent-c39 class="tiles__tile">
+            <div _ngcontent-c39 class="summary" style="background-color: rgba(0,0,0,.5)">
+                <div _ngcontent-c39 class="summary__rank icon-mmr_7"></div>
+                <div _ngcontent-c39 class="summary__text">
+                    <span _ngcontent-c39>
+                        <span class="text-weak-pink">{{ personaname }}</span>
+                        <br>
+                        played the match like
+                        </span>
+                        <span _ngcontent-c39 style="color: rgb(135, 225, 110);"> Divine </span>
+                </div>
+
+
+                <div _ngcontent-c39 class="match-share">
+                    <div _ngcontent-c57 class="sharing__social-link">
+                        <div _ngcontent-c39 class="sharing__title"> Share </div>
+                            <a _ngcontent-c57  class="sharing__provider " >
+                                <i _ngcontent-c57 class="facebook_icon" style="height: 40px;"></i>
+                            </a>
+                            <a _ngcontent-c57 class="sharing__provider">
+                                <i _ngcontent-c57 class="twitter_icon" style="height: 40px;"></i>
+                            </a>
+                            <a _ngcontent-c57 class="sharing__provider">
+                                <i _ngcontent-c57 class="linkin_icon" style="height: 40px;"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Play detail view-->
+    <div _ngcontent-c11 class="match">
+    <div _ngcontent-c11 class="match__details">
+        <div _ngcontent-c16 class="stats__wrapper">
+            <div _ngcontent-c58 class="stats__content">
+                <div _ngcontent-c58 class="stats__heading">
+                    <div _ngcontent-c58 class="stats__row stats__row_head">
+                        <div _ngcontent-c58 class="stats__shield">
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_player"></div>
+                            <div _ngcontent-c58 class="stats__col stats__col_kda">
+                                <span>K</span>
+                                <span>D</span>
+                                <span>A</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_net">NET</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_gpm">GPM</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_xpm">XPM</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_lh">LH</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_dn">DN</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_hd">HD</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_td">TD</div>
+                            <div _ngcontent-c58 class="stats__col stats__col_heal">Heal</div>
+                    </div>
+                </div>
+                <div _ngcontent-c58 class="stats__table">
+                    <!-- Player detail -->
+                    <!-- Match team radiant -->
+                    <div _ngcontent-c58 class="stats__team stats__team_radiant">
+                        <div _ngcontent-c58 class="stats__team-info_wrapper">
+                            <div _ngcontent-c58 class="stats__team-info">
+                                <span _ngcontent-c58 class="stats__team_name">
+                                    The Radiant
+                                </span>
+                                {% if match_data.randiant_win %}<i _ngcontent-c58 class="icon icon-win"></i>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First player -->
+                {% for player in match_data.players %}
+                    {% if player.player_slot <= 127 %}
+                        <div _ngcontent-c58 class="stats__wrapper">
+                            <div _ngcontent-c58 class="stats__row">
+                                <div _ngcontent-c58 class="stats__shield icon-mmr_6"></div>
+                                    <div _ngcontent-c58 class="stats__col stats__col_player">
+                                        <div _ngcontent-c58 class="player">
+                                        <div _ngcontent-c58 class="player__image d2mh hero-{{ player.hero_id }}"></div>
+                                        <div _ngcontent-c58 class="player__data">
+                                            <div _ngcontent-c58 class="player__name">
+                                            &nbsp;
+                                                {% if player.personaname %}
+                                                 {{ player.personaname }}
+                                                {% else %}
+                                                 Anonymous
+                                             {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div _ngcontent-c58 class="stats__col stats__col_kda">
+                                <div _ngcontent-c58 class="kda">
+                                    <div _ngcontent-c58 class="kda__numbers">
+                                        <span _ngcontent-c58 class="marker">{{ player.kills }}</span>
+                                        <span _ngcontent-c58>{{ player.deaths }}</span>
+                                        <span _ngcontent-c58>{{ player.assists }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_net">
+                                <span _ngcontent-c58 class="marker">{{ player.total_gold | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_gpm">
+                                 <span _ngcontent-c58 class="marker">{{ player.gold_per_min }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_xpm">
+                                <span _ngcontent-c58 class="marker">{{ player.xp_per_min }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_lh">
+                                <span _ngcontent-c58 class="marker">{{ player.last_hits }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_dn">
+                                <span _ngcontent-c58>{{ player.denies }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_hd">
+                                <span _ngcontent-c58 class="marker">{{ player.hero_damage | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_td">
+                                <span _ngcontent-c58 class="marker">
+                                    {% if player.tower_damage > 1000 %}
+                                        {{ player.tower_damage | net_format }}k
+                                    {% else %}
+                                        {{ player.tower_damage }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_heal">
+                                <span _ngcontent-c58>
+                                {% if player.hero_healing is 0%}
+                                    -
+                                {% elif player.hero_healing > 1000 %}
+                                    {{ player.hero_healing | net_format }}k
+                                {% else %}
+                                    {{ player.hero_healing }}
+                                {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                {% endfor %}
+                <!-- Total -->
+                    <div _ngcontent-c58 class="stats__wrapper">
+                        <div _ngcontent-c58 class="stats__row">
+                            <div _ngcontent-c58 class="stats__shield"></div>
+                             <div _ngcontent-c58 class="stats__col stats__col_player">
+                                 <div _ngcontent-c58 class="stats__total">
+                                     Total
+                                 </div>
+                             </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_kda">
+                                <div _ngcontent-c58 class="kda">
+                                    <div _ngcontent-c58 class="kda__numbers">
+                                        <span _ngcontent-c58>{{ radiant.kills }}</span>
+                                        <span _ngcontent-c58>{{ radiant.deaths }}</span>
+                                        <span _ngcontent-c58>{{ radiant.assists }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_net">
+                                <span _ngcontent-c58 >{{ radiant.total_golds | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_gpm">
+                                 <span _ngcontent-c58>{{ radiant.gpm | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_xpm">
+                                <span _ngcontent-c58>{{ radiant.xpm | net_format}}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_lh">
+                                {% if radiant.lh > 1000 %}
+                                    <span _ngcontent-c58>{{ radiant.lh | net_format}}k</span>
+                                    {% else %}
+                                    <span _ngcontent-c58>{{ radiant.lh }}</span>
+                                {% endif %}
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_dn">
+                                <span _ngcontent-c58>{{ radiant.dn }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_hd">
+                                <span _ngcontent-c58>{{ radiant.hd | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_td">
+                                <span _ngcontent-c58>{{ radiant.td | net_format}}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_heal">
+                                <span _ngcontent-c58>
+                                    {% if radiant.heal > 1000 %}
+                                        {{ radiant.heal | net_format}}k
+                                        {% else %}
+                                        {{ radiant.heal }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Match detail radiant end here -->
+                    <div _ngcontent-c58 class="stats__team stats__team_dire">
+                        <div _ngcontent-c58 class="stats__team-info_wrapper">
+                            <div _ngcontent-c58 class="stats__team-info">
+                                <span _ngcontent-c58 class="stats__team_name">
+                                    The Dire
+                                </span>
+                            </div>
+                            {% if not match_data.randiant_win %}<i _ngcontent-c58 class="icon icon-win"></i>{% endif %}
+
+                        </div>
+                    </div>
+
+                {% for player in match_data.players %}
+                    {% if player.player_slot > 127 %}
+                        <div _ngcontent-c58 class="stats__wrapper">
+                            <div _ngcontent-c58 class="stats__row">
+                                <div _ngcontent-c58 class="stats__shield icon-mmr_6"></div>
+                                    <div _ngcontent-c58 class="stats__col stats__col_player">
+                                        <div _ngcontent-c58 class="player">
+                                        <div _ngcontent-c58 class="player__image d2mh hero-{{ player.hero_id }}"></div>
+                                        <div _ngcontent-c58 class="player__data">
+                                            <div _ngcontent-c58 class="player__name">
+                                            &nbsp;
+                                                {% if player.personaname %}
+                                                 {{ player.personaname }}
+                                                {% else %}
+                                                 Anonymous
+                                             {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div _ngcontent-c58 class="stats__col stats__col_kda">
+                                <div _ngcontent-c58 class="kda">
+                                    <div _ngcontent-c58 class="kda__numbers">
+                                        <span _ngcontent-c58 class="marker">{{ player.kills }}</span>
+                                        <span _ngcontent-c58>{{ player.deaths }}</span>
+                                        <span _ngcontent-c58>{{ player.assists }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_net">
+                                <span _ngcontent-c58 class="marker">{{ player.total_gold | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_gpm">
+                                 <span _ngcontent-c58 class="marker">{{ player.gold_per_min }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_xpm">
+                                <span _ngcontent-c58 class="marker">{{ player.xp_per_min }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_lh">
+                                <span _ngcontent-c58 class="marker">{{ player.last_hits }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_dn">
+                                <span _ngcontent-c58>{{ player.denies }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_hd">
+                                <span _ngcontent-c58 class="marker">{{ player.hero_damage | net_format}}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_td">
+                                <span _ngcontent-c58 class="marker">
+                                    {% if player.tower_damage >= 1000 %}
+                                        {{ player.tower_damage | net_format }}k
+                                    {% else %}
+                                        {{ player.tower_damage }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_heal">
+                                <span _ngcontent-c58>
+                                {% if player.hero_healing is 0%}
+                                    -
+                                {% elif player.hero_healing > 1000 %}
+                                    {{ player.hero_healing | net_format }}k
+                                {% else %}
+                                    {{ player.hero_healing }}
+                                {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                {% endfor %}
+                <!-- Total -->
+                    <div _ngcontent-c58 class="stats__wrapper">
+                        <div _ngcontent-c58 class="stats__row">
+                            <div _ngcontent-c58 class="stats__shield"></div>
+                             <div _ngcontent-c58 class="stats__col stats__col_player">
+                                 <div _ngcontent-c58 class="stats__total">
+                                     Total
+                                 </div>
+                             </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_kda">
+                                <div _ngcontent-c58 class="kda">
+                                    <div _ngcontent-c58 class="kda__numbers">
+                                        <span _ngcontent-c58>{{ dire.kills }}</span>
+                                        <span _ngcontent-c58>{{ dire.deaths }}</span>
+                                        <span _ngcontent-c58>{{ dire.assists }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_net">
+                                <span _ngcontent-c58 >{{ dire.total_golds | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_gpm">
+                                 <span _ngcontent-c58>{{ dire.gpm | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_xpm">
+                                <span _ngcontent-c58>{{ dire.xpm | net_format}}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_lh">
+                                {% if radiant.lh > 1000 %}
+                                    <span _ngcontent-c58>{{ dire.lh | net_format}}k</span>
+                                    {% else %}
+                                    <span _ngcontent-c58>{{ dire.lh }}</span>
+                                {% endif %}
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_dn">
+                                <span _ngcontent-c58>{{ dire.dn }}</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_hd">
+                                <span _ngcontent-c58>{{ dire.hd | net_format }}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_td">
+                                <span _ngcontent-c58>{{ dire.td | net_format}}k</span>
+                            </div>
+                            <div _ngcontent-c58 class="stats__col stats__col_heal">
+                                <span _ngcontent-c58>
+                                    {% if dire.heal > 1000 %}
+                                        {{ dire.heal | net_format}}k
+                                        {% else %}
+                                        {{ dire.heal }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Match dire end here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div _ngcontent-c39 class="tiles">
+    <section _ngcontent-c39 class="tiles__tile" style="background-color: rgba(0, 0, 0, .5)">
+        <div _ngcontent-c50 class="section" >
+            <div _ngcontent-c50 class="advices">
+                {% for i in match_data.players %}
+                        {% if i.account_id == account_id %}
+                                <div _ngcontent-c50 class="advices__title">
+                                General advice for
+                                <figure _ngcontent-c50 class="advices__icon d2mh hero-{{ i.hero_id }}"></figure>
+                            {% for hero in heroes %}
+                                    {% if hero.id == i.hero_id %}
+                                        &nbsp;{{ hero.localized_name }}
+                                </div>
+                                        <div _ngcontent-c50 class="advices__body">
+                                            {{ hero.localized_name }} is usually played
+                                            <span class="text-success">in the safe lane</span>
+                                            , with a support.
+                                        </div>
+                                    {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    </div>
+    <div _ngcontent-c39 class="tiles">
+    <section _ngcontent-c39 class="tiles__tile" style="background-color: rgba(0, 0, 0, .5)">
+        <div _ngcontent-c50 class="section" >
+            <section _ngcontent-c51 class="laning">
+                <div _ngcontent-c51 class="laning__wrapper">
+                    <div _ngcontent-c51 class="laning__col laning__col_header">
+                        <div _ngcontent-c51 class="laning__header">
+                            <h2 _ngcontent-c51 class="laning__heading">Laning</h2>
+                            <sup _ngcontent-c51 class="laning__supheader laning__supheader_faded">BETA</sup>
+                        </div>
+                        <div _ngcontent-c51 class="laning__text">Damage in the lane during
+                            the first 10 minutes.</div>
+                    </div>
+                    <div _ngcontent-c51 class="laning__empty">
+                        <div _ngcontent-c51 class="laning__heroes">
+                            <div _ngcontent-c51 class="laning__avatar d2mh npc_dota_hero_juggernaut"></div>
+                            <div _ngcontent-c51 class="laning__text laning__text_between">vs</div>
+                            <div _ngcontent-c51 class="laning__avatar d2mh npc_dota_hero_axe"></div>
+                        </div>
+                        <div _ngcontent-c51 class="laning__total">
+                            <div _ngcontent-c51 class="laning__text_cell laning__text_done">Done</div>
+                            <div _ngcontent-c51 class="laning__text_large laning__text_done">3224</div>
+                            <div _ngcontent-c51 class="laning__text_cell laning__text_received">Received</div>
+                            <div _ngcontent-c51 class="laning__text_large laning__text_received">3175</div>
+                        </div>
+                    </div>
+                    <div _ngcontent-c51 class="laning__advice">
+                        <h3 _ngcontent-c51 class="laning__supheader">Advice</h3>
+                        <div _ngcontent-c51 class="laning__text_medium">
+                            When you play on a carry hero, make sure to buy and bring additional healing items when it
+                            is necessary to lane comfortably.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    </div>
+{% endblock %}

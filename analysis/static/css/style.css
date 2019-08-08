@@ -1,0 +1,2986 @@
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+    margin-top: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 52px;
+    padding: 5px 15px;
+    background: rgba(0,0,0,.2);
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+h1.begin {
+  color: green;
+}
+h1.intro{
+  color: white;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("roshan.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg_main {
+    min-height: 100%;
+    flex-direction: column;
+    background: linear-gradient(to bottom,#193869 0,#0e1c3f 17%,#0d1533 100%);
+    overflow: hidden;
+}
+
+#controls[_ngcontent-c8] {
+    position: relative;
+    z-index: 4;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.controls__content[_ngcontent-c8] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.control-button.control-button-login[_ngcontent-c8] {
+    min-width: 150px;
+    color: #fff;
+}
+
+[_nghost-c8] {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: flex-start;
+    font-family: TTNorms,arial,sans-serif;
+    min-width: 956px;
+    position: relative;
+}
+
+.control-button[_ngcontent-c25] {
+    display: inline-block;
+    height: 26px;
+    min-width: 26px;
+    padding: 18px;
+    background: rgba(0,0,0,.2);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.top_pad {
+
+    padding-top: 100px;
+
+}
+
+.font_white {
+  color: white;
+}
+
+span {
+    display: inline-block;
+  }
+
+div {
+    display: block;
+}
+
+.resume[_ngcontent-c30] {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.resume__content[_ngcontent-c30] {
+    display: flex;
+    align-items: flex-start;
+    padding: 35px 55px;
+}
+
+.resume__title[_ngcontent-c30] {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 59px;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.tooltip[_ngcontent-c38] {
+    display: inline-block;
+    position: relative;
+    cursor: help;
+    width: 100%;
+    z-index: 5;
+}
+
+.resume__values-wrapper[_ngcontent-c30] {
+    border-top: 1px solid rgba(255,255,255,.15);
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.resume__values[_ngcontent-c30] {
+    display: flex;
+    justify-content: center;
+}
+
+.resume__data[_ngcontent-c30]:first-of-type {
+    margin-left: 0;
+}
+
+.resume__data[_ngcontent-c30] {
+    margin-left: 25px;
+}
+
+.resume__subheader[_ngcontent-c30] {
+    color: #fff;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.resume__data_matches[_ngcontent-c30] .resume__value[_ngcontent-c30] {
+    color: #d2977e;
+}
+
+.resume__data_wins[_ngcontent-c30] .resume__value[_ngcontent-c30] {
+    color: #53e29f;
+}
+
+.resume__data_loses[_ngcontent-c30] .resume__value[_ngcontent-c30] {
+    color: #db4000;
+}
+
+.resume__value[_ngcontent-c30] {
+    line-height: 38px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.resume__data_mmr-down[_ngcontent-c30] .resume__value[_ngcontent-c30] {
+    color: #db4000;
+}
+
+.resume__data_mmr-up[_ngcontent-c30] .resume__value[_ngcontent-c30] {
+    color: #53e29f;
+}
+
+.section[_ngcontent-c16] {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
+    margin: 0 auto 30px;
+}
+
+.shields[_ngcontent-c30] {
+    margin: 0 auto;
+    width: 100px;
+    padding: 20px 40px 30px;
+    box-sizing: border-box;
+}
+
+.shields__title[_ngcontent-c31] {
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.shields__list[_ngcontent-c31] {
+    display: flex;
+    justify-content: center;
+}
+
+.shields__item[_ngcontent-c31] {
+    text-align: center;
+    margin-right: 25px;
+}
+
+.shields__header[_ngcontent-c31] {
+    color: #fff;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.tooltip[_ngcontent-c38] {
+    display: inline-block;
+    position: relative;
+    cursor: help;
+    width: 100%;
+    z-index: 5;
+}
+
+.tooltip__trigger[_ngcontent-c38] {
+    width: 100%;
+    font-size: 0;
+    display: inline-block;
+}
+
+.tooltip__body[_ngcontent-c38] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 85%;
+    border-radius: 20px;
+    background-color: #000;
+    padding: 10px 15px 20px 5px;
+}
+
+.tooltip_summary-inline[_ngcontent-c38] .tooltip__body[_ngcontent-c38] {
+    margin-top: -150px;
+    margin-left: -400px;
+}
+
+.summary__subheader[_ngcontent-c27] {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.summary[_ngcontent-c27] {
+    width: 1024px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.nav[_ngcontent-c28] {
+    padding: 30px 0 10px;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__group[_ngcontent-c28] {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 80px;
+    margin-right: 10px;
+}
+
+.nav__group[_ngcontent-c28]:last-child {
+    margin-right: 0;
+}
+
+.nav-item{
+    margin-right: 6px;
+}
+
+.period[_ngcontent-c29] {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.sharing[_ngcontent-c39] {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharing__social-links[_ngcontent-c39] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.sharing__title[_ngcontent-c39] {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sharing__provider[_ngcontent-c39] {
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+
+.sharing__provider[_ngcontent-c39] i[_ngcontent-c39] {
+    width: 50px;
+    display: inline-block;
+}
+
+.nav__item_active[_ngcontent-c28] {
+    background-color: #f8c018;
+    color: #000;
+}
+
+.nav__item[_ngcontent-c28] {
+    display: inline-block;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding: 0 20px;
+    border-radius: 80px;
+}
+
+#content[_ngcontent-c7] {
+    flex-grow: 1;
+}
+
+.summary__subheader[_ngcontent-c27] h3[_ngcontent-c27] {
+    display: flex;
+    font-size: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.summary__subheader_playerName[_ngcontent-c27] {
+    display: inline;
+    font-size: inherit;
+    color: #0262ff;
+    margin: 0 0 0 4px;
+}
+
+.period__arrow[_ngcontent-c29] {
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.period__title[_ngcontent-c29] {
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 25px;
+}
+
+.tooltip__trigger[_ngcontent-c38] {
+    width: 100%;
+    font-size: 0;
+    display: inline-block;
+}
+
+
+.tooltip_summary-main[_ngcontent-c38] .tooltip__body[_ngcontent-c38] {
+    left: auto;
+    right: 100%;
+}
+
+.tooltip__body[_ngcontent-c38] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 85%;
+    border-radius: 20px;
+    background-color: #000;
+    padding: 10px 15px 20px 5px;
+}
+
+.resume__shield[_ngcontent-c30] {
+    margin: -25px 0 0 25px;
+    flex-shrink: 0;
+    width: 250px;
+    height: 225px;
+}
+
+.shields__image[_ngcontent-c31] {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* MMR icon*/
+
+.icon-mmr_1 {
+    background: url("herald.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_2 {
+    background: url("guradian.jpg") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_3 {
+    background: url("crusader.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_4 {
+    background: url("archon.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_5 {
+    background: url("legend.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_6 {
+    background: url("ancient.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_7 {
+    background: url("divine.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.icon-mmr_8 {
+    background: url("immortal.png") center/cover no-repeat;
+    width: 225px;
+    height: 150px;
+}
+
+.facebook_icon {
+    background-image: url("facebook.png");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.twitter_icon {
+    background-image: url("twitter.png");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkin_icon {
+    background-image: url("linkin.png");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rank[_ngcontent-c38] {
+    margin-right: 5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    text-transform: none;
+}
+
+
+.rank__title[_ngcontent-c38] {
+    font-size: 11px;
+}
+
+
+.matches__title[_ngcontent-c36] {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Matches for period */
+
+.matches[_ngcontent-c80] {
+    width: 100%;
+    padding: 20px 0 30px;
+}
+
+[_nghost-c36] {
+    display: block;
+}
+
+.matches__item[_ngcontent-c36] {
+    height: 43px;
+    display: flex;
+    color: #fff;
+    position: relative;
+    align-items: center;
+    padding: 0 143px 0 102px;
+    background-color: transparent;
+    transition: background-color 150ms ease;
+}
+
+.matches__gap[_ngcontent-c36] {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.matches__gap-status[_ngcontent-c36] {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 0 20px;
+    background-color: #0062ff;
+    text-transform: lowercase;
+}
+
+.matches__date[_ngcontent-c36] {
+    line-height: 24px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.matches__col_isViewed[_ngcontent-c36] {
+    opacity: .3;
+}
+
+.matches__col_date[_ngcontent-c36] {
+    width: 105px;
+}
+
+.matches__col[_ngcontent-c36] {
+    flex-shrink: 0;
+}
+
+.matches__meta[_ngcontent-c36] {
+    font-size: 9px;
+    color: #ffffff;
+}
+
+.matches__col_status[_ngcontent-c36] {
+    width: 98px;
+}
+
+.matches__status_win[_ngcontent-c36] {
+    color: #53e29f;
+}
+
+.matches__col_lane[_ngcontent-c36] {
+    width: 95px;
+}
+
+.matches__status_lose[_ngcontent-c36] {
+    color: #db4000;
+}
+
+/* hero */
+
+.matches__col_hero[_ngcontent-c36] {
+    width: 210px;
+}
+
+.matches__hero[_ngcontent-c36] {
+    display: flex;
+    align-items: center;
+}
+
+.matches__hero-avatar[_ngcontent-c36] {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+
+.matches__hero-title[_ngcontent-c36] {
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+/* Role */
+
+.matches__col_role[_ngcontent-c36] {
+    width: 96px;
+}
+
+.matches__value[_ngcontent-c36] {
+    font-size: 11px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* KDA */
+
+.matches__col_kda[_ngcontent-c36] {
+    width: 69px;
+    padding-right: 30px;
+}
+
+.matches__value[_ngcontent-c36] {
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+[_nghost-c20] {
+    display: flex;
+}
+
+.metric[_ngcontent-c20] {
+    position: relative;
+    min-width: 4px;
+    border-radius: 2px 0 0 2px;
+}
+
+.kill[_ngcontent-c20] {
+    color: rgb(83, 225, 158);
+}
+
+.death[_ngcontent-c20] {
+    color: rgb(217, 65, 24);
+}
+
+.assist[_ngcontent-c20] {
+    color: rgb(242, 201, 76);
+}
+
+/* Match skill */
+
+.matches__shield[_ngcontent-c36] {
+    width: 40px;
+    height: 40px;
+}
+
+/* User block */
+
+.auth-block[_ngcontent-c26] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 52px;
+    padding: 5px 15px;
+    background: rgba(0,0,0,.2);
+    border-radius: 20px;
+}
+
+.auth-block[_ngcontent-c26] .top-line[_ngcontent-c26] {
+    display: flex;
+    align-items: center;
+}
+
+.auth-block[_ngcontent-c26] .bottom-line[_ngcontent-c26] > *[_ngcontent-c26], .auth-block[_ngcontent-c26] .top-line[_ngcontent-c26] > *[_ngcontent-c26] {
+    margin-right: 5px;
+}
+
+.auth-block[_ngcontent-c26] .avatar[_ngcontent-c26] {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.auth-block[_ngcontent-c26] a:hover {background-color: rgba(0, 0, 0, .2);}
+
+.auth-block[_ngcontent-c26]:hover .dropdown-menu {display: block;}
+
+.auth-block[_ngcontent-c26]:hover .menu_btn {background-color: rgba(0, 0, 0, .5);}
+
+img {
+    border-style: none;
+    width: 24px;
+    height: 24px;
+}
+
+.auth-block[_ngcontent-c26] .username[_ngcontent-c26] {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.auth-block[_ngcontent-c26] .bottom-line[_ngcontent-c26] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 250px;
+}
+
+.auth-block[_ngcontent-c26] .bottom-line[_ngcontent-c26], .auth-block[_ngcontent-c26] .top-line[_ngcontent-c26] {
+    display: flex;
+    align-items: center;
+}
+
+.auth-block[_ngcontent-c26] .bottom-line[_ngcontent-c26] > *[_ngcontent-c26], .auth-block[_ngcontent-c26] .top-line[_ngcontent-c26] > *[_ngcontent-c26] {
+    margin-right: 5px;
+}
+
+.auth-block[_ngcontent-c26] .gold[_ngcontent-c26] {
+    color: #f8c018;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 14px;
+}
+
+.auth-block[_ngcontent-c26] .icon[_ngcontent-c26] {
+    margin-left: 3px;
+}
+
+.menu_btn{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    width: calc(100% - 30px);
+    margin: 0 0 0 -15px;
+    padding: 15px;
+    background: rgba(0,0,0,.2);
+    color: #fff;
+    list-style-type: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
+
+.auth-block[_ngcontent-c26] .menu[_ngcontent-c26] {
+    position: absolute;
+    top: 100%;
+    width: calc(100% - 30px);
+    margin: 0 0 0 -15px;
+    padding: 15px;
+    background: rgba(0,0,0,.2);
+    color: #fff;
+    list-style-type: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
+
+.auth-block[_ngcontent-c26] .logout[_ngcontent-c26] {
+    cursor: pointer;
+}
+
+.auth-block[_ngcontent-c26] .settings[_ngcontent-c26]{
+    cursor: pointer;
+}
+
+/* Detail view */
+
+.tiles[_ngcontent-c39] {
+    display: flex;
+    width: 1024px;
+    padding-top: 25px;
+    justify-content: space-between;
+    margin: 0 auto 20px;
+}
+
+.tiles__tile[_ngcontent-c39]:last-child {
+    margin-right: 0;
+}
+
+.tiles__tile[_ngcontent-c39] {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    min-width: calc(50% - 5px);
+}
+
+.summary[_ngcontent-c39] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.summary__rank[_ngcontent-c39] {
+    width: 60px;
+    height: 60px;
+}
+
+.summary__text[_ngcontent-c39] {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    width: 350px;
+    margin-top: -5px;
+}
+
+.summary__share[_ngcontent-c39] {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.text-weak-pink {
+    color: #d2977e;
+}
+
+.summary__share-title[_ngcontent-c39] {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+.match-share[_ngcontent-c57] {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.sharing__social-link[_ngcontent-c57] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.sharing__provider[_ngcontent-c57] {
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.sharing__provider[_ngcontent-c57] i[_ngcontent-c57] {
+    width: 40px;
+    display: inline-block;
+}
+
+/* Match Analysis*/
+
+.match[_ngcontent-c11] {
+    flex-direction: column;
+    width: 960px;
+    padding-top: 15px;
+}
+
+.match[_ngcontent-c11] {
+    display: flex;
+    position: relative;
+    width: 1024px;
+    margin: 0 auto 20px;
+}
+
+.match__details[_ngcontent-c11] {
+    margin-right: 0;
+}
+
+.match__details[_ngcontent-c11] {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    min-width: calc(50% - 5px);
+}
+
+.summary__wrapper[_ngcontent-c16] {
+    position: relative;
+    width: 1024px;
+    height: 690px;
+    transition: height .3s ease-in-out;
+    margin: 20px auto 0;
+}
+
+.stats__content[_ngcontent-c58] {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 0 25px;
+}
+
+.stats__row_head[_ngcontent-c58] {
+    background-color: transparent!important;
+    margin: 0;
+    cursor: default;
+}
+
+.stats__row[_ngcontent-c58] {
+    display: flex;
+    padding: 0 32px;
+    position: relative;
+    align-items: center;
+}
+
+.stats__shield[_ngcontent-c58] {
+    width: 30px;
+    height: 30px;
+}
+
+.stats__shield[_ngcontent-c58] {
+   flex-shrink: 0;
+    margin-right: 13px;
+}
+
+.stats__row_head[_ngcontent-c58] .stats__col[_ngcontent-c58] {
+    opacity: .34;
+}
+
+.stats__row_head[_ngcontent-c58] {
+    background-color: transparent!important;
+    margin: 0;
+    cursor: default;
+}
+
+.stats__col[_ngcontent-c58] {
+    height: 42px;
+    display: flex;
+    color: #fff;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 7px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.stats__col_player[_ngcontent-c58] {
+    width: 183px;
+    padding-left: 0;
+}
+
+.player[_ngcontent-c58] {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.stats__team_dire[_ngcontent-c58] {
+    color: #db4000;
+}
+
+.stats__team_radiant[_ngcontent-c58] {
+    color: #53e29f;
+    margin-top: -22px;
+}
+
+.stats__total[_ngcontent-c58] {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.player__image[_ngcontent-c58] {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.player__name[_ngcontent-c58] {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.player__data[_ngcontent-c58] {
+    flex-grow: 0;
+    width: 150px;
+}
+
+.stats__col_kda[_ngcontent-c58] {
+    width: 76px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 18px;
+}
+
+.kda[_ngcontent-c58] {
+    width: 100%;
+}
+
+
+.kda__numbers[_ngcontent-c58] {
+    width: 100%;
+    display: flex;
+    margin-bottom: 3px;
+    justify-content: space-between;
+}
+
+.marker[_ngcontent-c58] {
+    color: #53e29f;
+}
+
+
+.stats__col_gpm[_ngcontent-c58], .stats__col_net[_ngcontent-c58], .stats__col_xpm[_ngcontent-c58] {
+    width: 40px;
+}
+
+
+.stats__col_dn[_ngcontent-c58], .stats__col_lh[_ngcontent-c58] {
+    width: 31px;
+}
+
+.stats__col_hd[_ngcontent-c58] {
+    width: 45px;
+}
+
+.stats__col_td[_ngcontent-c58] {
+    width: 40px;
+}
+
+.stats__col_heal[_ngcontent-c58] {
+    width: 50px;
+}
+
+.stats__col_items[_ngcontent-c58] {
+    padding-left: 0;
+    flex-grow: 1;
+}
+
+.stats__team[_ngcontent-c58] {
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 43px;
+    margin-bottom: 10px;
+}
+
+.stats__team-info_wrapper[_ngcontent-c58] {
+    display: flex;
+    align-items: center;
+}
+
+.stats__team-info[_ngcontent-c58] {
+    margin-right: 4px;
+}
+
+.stats__wrapper[_ngcontent-c58] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.stats__team[_ngcontent-c58] .icon-win[_ngcontent-c58] {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url('victory.png') center/cover no-repeat;
+}
+
+
+
+/* Heroes icon css */
+
+.d2mh {
+    background-image: url("minimap_hero_sheet.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.d2mh.axe, .d2mh.npc_dota_hero_axe, .d2mh.hero-2 {
+    background-position: -0px -0px;
+}
+
+.d2mh.antimage, .d2mh.npc_dota_hero_antimage, .d2mh.anti_mage, .d2mh.hero-1 {
+    background-position: -32px -0px;
+}
+
+.d2mh.crystal_maiden, .d2mh.npc_dota_hero_crystal_maiden, .d2mh.hero-5 {
+    background-position: -64px -0px;
+}
+
+.d2mh.pangolier, .d2mh.npc_dota_hero_pangolier, .d2mh.hero-120 {
+    background-position: -160px -224px;
+}
+
+.d2mh.ancient_apparition, .d2mh.npc_dota_hero_ancient_apparition, .d2mh.hero-68 {
+    background-position: -96px -0px;
+}
+
+.d2mh.batrider, .d2mh.npc_dota_hero_batrider, .d2mh.hero-65 {
+    background-position: -128px -0px;
+}
+
+.d2mh.beastmaster, .d2mh.npc_dota_hero_beastmaster, .d2mh.hero-38 {
+    background-position: -160px -0px;
+}
+
+.d2mh.bloodseeker, .d2mh.npc_dota_hero_bloodseeker, .d2mh.hero-4 {
+    background-position: -192px -0px;
+}
+
+.d2mh.bounty_hunter, .d2mh.npc_dota_hero_bounty_hunter, .d2mh.hero-62 {
+    background-position: -224px -0px;
+}
+
+.d2mh.broodmother, .d2mh.npc_dota_hero_broodmother, .d2mh.hero-61 {
+    background-position: -256px -0px;
+}
+
+.d2mh.chen, .d2mh.npc_dota_hero_chen, .d2mh.hero-66 {
+    background-position: -288px -0px;
+}
+
+.d2mh.dark_seer, .d2mh.npc_dota_hero_dark_seer, .d2mh.hero-55 {
+    background-position: -320px -0px;
+}
+
+.d2mh.dazzle, .d2mh.npc_dota_hero_dazzle, .d2mh.hero-50 {
+    background-position: -352px -0px;
+}
+
+.d2mh.death_prophet, .d2mh.npc_dota_hero_death_prophet, .d2mh.hero-43 {
+    background-position: -384px -0px;
+}
+
+.d2mh.doom_bringer, .d2mh.npc_dota_hero_doom_bringer, .d2mh.doom, .d2mh.hero-69 {
+    background-position: -416px -0px;
+}
+
+.d2mh.dragon_knight, .d2mh.npc_dota_hero_dragon_knight, .d2mh.hero-49 {
+    background-position: -448px -0px;
+}
+
+.d2mh.alchemist, .d2mh.npc_dota_hero_alchemist, .d2mh.hero-73 {
+    background-position: -480px -0px;
+}
+
+.d2mh.drow_ranger, .d2mh.npc_dota_hero_drow_ranger, .d2mh.hero-6 {
+    background-position: -0px -32px;
+}
+
+.d2mh.earthshaker, .d2mh.npc_dota_hero_earthshaker, .d2mh.hero-7 {
+    background-position: -32px -32px;
+}
+
+.d2mh.enchantress, .d2mh.npc_dota_hero_enchantress, .d2mh.hero-58 {
+    background-position: -64px -32px;
+}
+
+.d2mh.enigma, .d2mh.npc_dota_hero_enigma, .d2mh.hero-33 {
+    background-position: -96px -32px;
+}
+
+.d2mh.faceless_void, .d2mh.npc_dota_hero_faceless_void, .d2mh.hero-41 {
+    background-position: -128px -32px;
+}
+
+.d2mh.furion, .d2mh.npc_dota_hero_furion, .d2mh.natures_prophet, .d2mh.hero-53 {
+    background-position: -160px -32px;
+}
+
+.d2mh.huskar, .d2mh.npc_dota_hero_huskar, .d2mh.hero-59 {
+    background-position: -192px -32px;
+}
+
+.d2mh.juggernaut, .d2mh.npc_dota_hero_juggernaut, .d2mh.hero-8 {
+    background-position: -224px -32px;
+}
+
+.d2mh.juggernaut_alt1, .d2mh.npc_dota_hero_juggernaut_alt1 {
+    background-position: -224px -224px;
+}
+
+.d2mh.kunkka, .d2mh.npc_dota_hero_kunkka, .d2mh.hero-23 {
+    background-position: -256px -32px;
+}
+
+.d2mh.leshrac, .d2mh.npc_dota_hero_leshrac, .d2mh.hero-52 {
+    background-position: -288px -32px;
+}
+
+.d2mh.lich, .d2mh.npc_dota_hero_lich, .d2mh.hero-31 {
+    background-position: -320px -32px;
+}
+
+.d2mh.life_stealer, .d2mh.npc_dota_hero_life_stealer, .d2mh.lifestealer, .d2mh.hero-54 {
+    background-position: -352px -32px;
+}
+
+.d2mh.lina, .d2mh.npc_dota_hero_lina, .d2mh.hero-25 {
+    background-position: -384px -32px;
+}
+
+.d2mh.lion, .d2mh.npc_dota_hero_lion, .d2mh.hero-26 {
+    background-position: -416px -32px;
+}
+
+.d2mh.mirana, .d2mh.npc_dota_hero_mirana, .d2mh.hero-9 {
+    background-position: -448px -32px;
+}
+
+.d2mh.morphling, .d2mh.npc_dota_hero_morphling, .d2mh.hero-10 {
+    background-position: -480px -32px;
+}
+
+.d2mh.necrolyte, .d2mh.npc_dota_hero_necrolyte, .d2mh.necrophos, .d2mh.hero-36 {
+    background-position: -0px -64px;
+}
+
+.d2mh.nevermore, .d2mh.npc_dota_hero_nevermore, .d2mh.shadow_fiend, .d2mh.hero-11 {
+    background-position: -32px -64px;
+}
+
+.d2mh.night_stalker, .d2mh.npc_dota_hero_night_stalker, .d2mh.hero-60 {
+    background-position: -64px -64px;
+}
+
+.d2mh.omniknight, .d2mh.npc_dota_hero_omniknight, .d2mh.hero-57 {
+    background-position: -96px -64px;
+}
+
+.d2mh.puck, .d2mh.npc_dota_hero_puck, .d2mh.hero-13 {
+    background-position: -128px -64px;
+}
+
+.d2mh.pudge, .d2mh.npc_dota_hero_pudge, .d2mh.hero-14 {
+    background-position: -160px -64px;
+}
+
+.d2mh.pudge_alt1, .d2mh.npc_dota_hero_pudge_alt1 {
+    background-position: -32px -256px;
+}
+
+.d2mh.pugna, .d2mh.npc_dota_hero_pugna, .d2mh.hero-45 {
+    background-position: -192px -64px;
+}
+
+.d2mh.queenofpain, .d2mh.npc_dota_hero_queenofpain, .d2mh.queen_of_pain, .d2mh.hero-39 {
+    background-position: -224px -64px;
+}
+
+.d2mh.rattletrap, .d2mh.npc_dota_hero_rattletrap, .d2mh.clockwerk, .d2mh.hero-51 {
+    background-position: -256px -64px;
+}
+
+.d2mh.razor, .d2mh.npc_dota_hero_razor, .d2mh.hero-15 {
+    background-position: -288px -64px;
+}
+
+.d2mh.riki, .d2mh.npc_dota_hero_riki, .d2mh.hero-32 {
+    background-position: -320px -64px;
+}
+
+.d2mh.sand_king, .d2mh.npc_dota_hero_sand_king, .d2mh.hero-16 {
+    background-position: -352px -64px;
+}
+
+.d2mh.shadow_shaman, .d2mh.npc_dota_hero_shadow_shaman, .d2mh.hero-27 {
+    background-position: -384px -64px;
+}
+
+.d2mh.silencer, .d2mh.npc_dota_hero_silencer, .d2mh.hero-75 {
+    background-position: -416px -64px;
+}
+
+.d2mh.skeleton_king, .d2mh.npc_dota_hero_skeleton_king, .d2mh.wraith_king, .d2mh.hero-42 {
+    background-position: -448px -64px;
+}
+
+.d2mh.slardar, .d2mh.npc_dota_hero_slardar, .d2mh.hero-28 {
+    background-position: -480px -64px;
+}
+
+.d2mh.sniper, .d2mh.npc_dota_hero_sniper, .d2mh.hero-35 {
+    background-position: -0px -96px;
+}
+
+.d2mh.spectre, .d2mh.npc_dota_hero_spectre, .d2mh.hero-67 {
+    background-position: -32px -96px;
+}
+
+.d2mh.spirit_breaker, .d2mh.npc_dota_hero_spirit_breaker, .d2mh.hero-71 {
+    background-position: -64px -96px;
+}
+
+.d2mh.storm_spirit, .d2mh.npc_dota_hero_storm_spirit, .d2mh.hero-17 {
+    background-position: -96px -96px;
+}
+
+.d2mh.sven, .d2mh.npc_dota_hero_sven, .d2mh.hero-18 {
+    background-position: -128px -96px;
+}
+
+.d2mh.tidehunter, .d2mh.npc_dota_hero_tidehunter, .d2mh.hero-29 {
+    background-position: -160px -96px;
+}
+
+.d2mh.tinker, .d2mh.npc_dota_hero_tinker, .d2mh.hero-34 {
+    background-position: -192px -96px;
+}
+
+.d2mh.tiny, .d2mh.npc_dota_hero_tiny, .d2mh.hero-19 {
+    background-position: -224px -96px;
+}
+
+.d2mh.jakiro, .d2mh.npc_dota_hero_jakiro, .d2mh.hero-64 {
+    background-position: -256px -96px;
+}
+
+.d2mh.ursa, .d2mh.npc_dota_hero_ursa, .d2mh.hero-70 {
+    background-position: -288px -96px;
+}
+
+.d2mh.vengefulspirit, .d2mh.npc_dota_hero_vengefulspirit, .d2mh.vengeful_spirit, .d2mh.hero-20 {
+    background-position: -320px -96px;
+}
+
+.d2mh.venomancer, .d2mh.npc_dota_hero_venomancer, .d2mh.hero-40 {
+    background-position: -352px -96px;
+}
+
+.d2mh.viper, .d2mh.npc_dota_hero_viper, .d2mh.hero-47 {
+    background-position: -384px -96px;
+}
+
+.d2mh.warlock, .d2mh.npc_dota_hero_warlock, .d2mh.hero-37 {
+    background-position: -416px -96px;
+}
+
+.d2mh.weaver, .d2mh.npc_dota_hero_weaver, .d2mh.hero-63 {
+    background-position: -448px -96px;
+}
+
+.d2mh.windrunner, .d2mh.npc_dota_hero_windrunner, .d2mh.windranger, .d2mh.hero-21 {
+    background-position: -480px -96px;
+}
+
+.d2mh.witch_doctor, .d2mh.npc_dota_hero_witch_doctor, .d2mh.hero-30 {
+    background-position: -0px -128px;
+}
+
+.d2mh.zuus, .d2mh.npc_dota_hero_zuus, .d2mh.zeus, .d2mh.hero-22 {
+    background-position: -32px -128px;
+}
+
+.d2mh.invoker, .d2mh.npc_dota_hero_invoker, .d2mh.hero-74 {
+    background-position: -64px -128px;
+}
+
+.d2mh.clinkz, .d2mh.npc_dota_hero_clinkz, .d2mh.hero-56 {
+    background-position: -96px -128px;
+}
+
+.d2mh.obsidian_destroyer, .d2mh.npc_dota_hero_obsidian_destroyer, .d2mh.outworld_devourer, .d2mh.hero-76 {
+    background-position: -128px -128px;
+}
+
+.d2mh.bane, .d2mh.npc_dota_hero_bane, .d2mh.hero-3 {
+    background-position: -160px -128px;
+}
+
+.d2mh.shadow_demon, .d2mh.npc_dota_hero_shadow_demon, .d2mh.hero-79 {
+    background-position: -192px -128px;
+}
+
+.d2mh.lycan, .d2mh.npc_dota_hero_lycan, .d2mh.hero-77 {
+    background-position: -224px -128px;
+}
+
+.d2mh.lone_druid, .d2mh.npc_dota_hero_lone_druid, .d2mh.hero-80 {
+    background-position: -256px -128px;
+}
+
+.d2mh.brewmaster, .d2mh.npc_dota_hero_brewmaster, .d2mh.hero-78 {
+    background-position: -288px -128px;
+}
+
+.d2mh.brewmaster_fire, .d2mh.npc_dota_hero_brewmaster_fire {
+    background-position: -320px -128px;
+}
+
+.d2mh.brewmaster_storm, .d2mh.npc_dota_hero_brewmaster_storm {
+    background-position: -352px -128px;
+}
+
+.d2mh.brewmaster_earth, .d2mh.npc_dota_hero_brewmaster_earth {
+    background-position: -384px -128px;
+}
+
+.d2mh.phantom_lancer, .d2mh.npc_dota_hero_phantom_lancer, .d2mh.hero-12 {
+    background-position: -416px -128px;
+}
+
+.d2mh.chaos_knight, .d2mh.npc_dota_hero_chaos_knight, .d2mh.hero-81 {
+    background-position: -448px -128px;
+}
+
+.d2mh.phantom_assassin, .d2mh.npc_dota_hero_phantom_assassin, .d2mh.hero-44 {
+    background-position: -480px -128px;
+}
+
+.d2mh.treant, .d2mh.npc_dota_hero_treant, .d2mh.treant_protector, .d2mh.hero-83 {
+    background-position: -0px -160px;
+}
+
+.d2mh.luna, .d2mh.npc_dota_hero_luna, .d2mh.hero-48 {
+    background-position: -32px -160px;
+}
+
+.d2mh.ogre_magi, .d2mh.npc_dota_hero_ogre_magi, .d2mh.hero-84 {
+    background-position: -64px -160px;
+}
+
+.d2mh.gyrocopter, .d2mh.npc_dota_hero_gyrocopter, .d2mh.hero-72 {
+    background-position: -96px -160px;
+}
+
+.d2mh.rubick, .d2mh.npc_dota_hero_rubick, .d2mh.hero-86 {
+    background-position: -128px -160px;
+}
+
+.d2mh.wisp, .d2mh.npc_dota_hero_wisp, .d2mh.io, .d2mh.hero-91 {
+    background-position: -160px -160px;
+}
+
+.d2mh.wisp_alt, .d2mh.npc_dota_hero_wisp_alt {
+    background-position: -192px -224px;
+}
+
+.d2mh.disruptor, .d2mh.npc_dota_hero_disruptor, .d2mh.hero-87 {
+    background-position: -192px -160px;
+}
+
+.d2mh.undying, .d2mh.npc_dota_hero_undying, .d2mh.hero-85 {
+    background-position: -224px -160px;
+}
+
+.d2mh.naga_siren, .d2mh.npc_dota_hero_naga_siren, .d2mh.hero-89 {
+    background-position: -256px -160px;
+}
+
+.d2mh.templar_assassin, .d2mh.npc_dota_hero_templar_assassin, .d2mh.hero-46 {
+    background-position: -288px -160px;
+}
+
+.d2mh.nyx_assassin, .d2mh.npc_dota_hero_nyx_assassin, .d2mh.hero-88 {
+    background-position: -320px -160px;
+}
+
+.d2mh.keeper_of_the_light, .d2mh.npc_dota_hero_keeper_of_the_light, .d2mh.hero-90 {
+    background-position: -352px -160px;
+}
+
+.d2mh.visage, .d2mh.npc_dota_hero_visage, .d2mh.hero-92 {
+    background-position: -384px -160px;
+}
+
+.d2mh.magnataur, .d2mh.npc_dota_hero_magnataur, .d2mh.magnus, .d2mh.hero-97 {
+    background-position: -416px -160px;
+}
+
+.d2mh.meepo, .d2mh.npc_dota_hero_meepo, .d2mh.hero-82 {
+    background-position: -448px -160px;
+}
+
+.d2mh.centaur, .d2mh.npc_dota_hero_centaur, .d2mh.centaur_warrunner, .d2mh.hero-96 {
+    background-position: -480px -160px;
+}
+
+.d2mh.slark, .d2mh.npc_dota_hero_slark, .d2mh.hero-93 {
+    background-position: -0px -192px;
+}
+
+.d2mh.medusa, .d2mh.npc_dota_hero_medusa, .d2mh.hero-94 {
+    background-position: -32px -192px;
+}
+
+.d2mh.shredder, .d2mh.npc_dota_hero_shredder, .d2mh.timbersaw, .d2mh.hero-98 {
+    background-position: -64px -192px;
+}
+
+.d2mh.troll_warlord, .d2mh.npc_dota_hero_troll_warlord, .d2mh.hero-95 {
+    background-position: -96px -192px;
+}
+
+.d2mh.tusk, .d2mh.npc_dota_hero_tusk, .d2mh.hero-100 {
+    background-position: -128px -192px;
+}
+
+.d2mh.bristleback, .d2mh.npc_dota_hero_bristleback, .d2mh.hero-99 {
+    background-position: -160px -192px;
+}
+
+.d2mh.skywrath_mage, .d2mh.npc_dota_hero_skywrath_mage, .d2mh.hero-101 {
+    background-position: -192px -192px;
+}
+
+.d2mh.elder_titan, .d2mh.npc_dota_hero_elder_titan, .d2mh.hero-103 {
+    background-position: -224px -192px;
+}
+
+.d2mh.abaddon, .d2mh.npc_dota_hero_abaddon, .d2mh.hero-102 {
+    background-position: -256px -192px;
+}
+
+.d2mh.ember_spirit, .d2mh.npc_dota_hero_ember_spirit, .d2mh.hero-106 {
+    background-position: -288px -192px;
+}
+
+.d2mh.legion_commander, .d2mh.npc_dota_hero_legion_commander, .d2mh.hero-104 {
+    background-position: -320px -192px;
+}
+
+.d2mh.earth_spirit, .d2mh.npc_dota_hero_earth_spirit, .d2mh.hero-107 {
+    background-position: -352px -192px;
+}
+
+.d2mh.terrorblade, .d2mh.npc_dota_hero_terrorblade, .d2mh.hero-109 {
+    background-position: -384px -192px;
+}
+
+.d2mh.phoenix, .d2mh.npc_dota_hero_phoenix, .d2mh.hero-110 {
+    background-position: -416px -192px;
+}
+
+.d2mh.techies, .d2mh.npc_dota_hero_techies, .d2mh.hero-105 {
+    background-position: -448px -192px;
+}
+
+.d2mh.oracle, .d2mh.npc_dota_hero_oracle, .d2mh.hero-111 {
+    background-position: -64px -224px;
+}
+
+.d2mh.winter_wyvern, .d2mh.npc_dota_hero_winter_wyvern, .d2mh.hero-112 {
+    background-position: -480px -192px;
+}
+
+.d2mh.lina_alt1, .d2mh.npc_dota_hero_lina_alt1 {
+    background-position: -480px -224px;
+}
+
+.d2mh.legion_commander_alt1, .d2mh.npc_dota_hero_legion_commander_alt1 {
+    background-position: -448px -224px;
+}
+
+.d2mh.terrorblade_alt1, .d2mh.npc_dota_hero_terrorblade_alt1 {
+    background-position: -416px -224px;
+}
+
+.d2mh.techies_alt1, .d2mh.npc_dota_hero_techies_alt1 {
+    background-position: -384px -224px;
+}
+
+.d2mh.nevermore_alt1, .d2mh.npc_dota_hero_nevermore_alt1 {
+    background-position: -352px -224px;
+}
+
+.d2mh.phantom_assassin_alt1, .d2mh.npc_dota_hero_phantom_assassin_alt1 {
+    background-position: -320px -224px;
+}
+
+.d2mh.crystal_maiden_alt1, .d2mh.npc_dota_hero_crystal_maiden_alt1 {
+    background-position: -288px -224px;
+}
+
+.d2mh.zeus_alt1, .d2mh.npc_dota_hero_zeus_alt1 {
+    background-position: -256px -224px;
+}
+
+.d2mh.arc_warden, .d2mh.npc_dota_hero_arc_warden, .d2mh.hero-113 {
+    background-position: -96px -224px;
+}
+
+.d2mh.arc_warden_tempest_double, .d2mh.npc_dota_hero_arc_warden_tempest_double {
+    background-position: -64px -256px;
+}
+
+.d2mh.abyssal_underlord, .d2mh.npc_dota_hero_abyssal_underlord, .d2mh.underlord, .d2mh.hero-108 {
+    background-position: -0px -224px;
+}
+
+.d2mh.monkey_king, .d2mh.npc_dota_hero_monkey_king, .d2mh.hero-114 {
+    background-position: -32px -224px;
+}
+
+.d2mh.monkey_king_alt1, .d2mh.npc_dota_hero_monkey_king_alt1 {
+    background-position: -128px -224px;
+}
+
+.d2mh.dark_willow, .d2mh.npc_dota_hero_dark_willow, .d2mh.hero-119 {
+    background-position: -0px -256px;
+}
+
+.d2mh.grimstroke, .d2mh.npc_dota_hero_grimstroke, .d2mh.hero-121 {
+    background-position: -96px -256px;
+}
+
+.d2mh.rubick_alt1, .d2mh.npc_dota_hero_rubick_alt1 {
+    background-position: -128px -256px;
+}
+
+.d2mh.mars, .d2mh.npc_dota_hero_mars, .d2mh.hero-129 {
+    background-position: -160px -256px;
+}
+
+/* Dota2 News */
+
+.entry-title {
+    font-size: 26px;
+    line-height: normal;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px #111111;
+    margin-bottom: 6px;
+}
+
+.entry-content, .entry-summary, .entry-meta, .entry-header {
+    color: rgba(255, 255, 255,.5);
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 4px;
+}
+
+.entry-header{
+    font-size: 20px;
+    color: gray;
+}
+.entry-content{
+    margin-bottom: 20px;
+}
+
+.entry-meta {
+    margin-bottom: 24px;
+    color: gray;
+}
+
+.dota_rule {
+    background-image: url('hr.png');
+    height: 21px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+/* Footer */
+
+.footer[_ngcontent-c12] {
+    flex-grow: 0;
+    color: #000;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer[_ngcontent-c12] .logo[_ngcontent-c12] {
+    width: 82px;
+    height: 22px;
+    background: url('bleach3.png') center no-repeat;
+}
+
+.footer[_ngcontent-c12] .nav[_ngcontent-c12] a[_ngcontent-c12] {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* General Section */
+
+.section[_ngcontent-c18] {
+    width: 1024px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.root[_ngcontent-c50] {
+    text-align: center;
+    margin: 30px auto 0;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.advices[_ngcontent-c50] {
+    padding-top: 25px;
+}
+
+.advices__title[_ngcontent-c50] {
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.advices__icon[_ngcontent-c50] {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+.advices__body[_ngcontent-c50] {
+    line-height: 35px;
+    font-size: 30px;
+    max-width: 636px;
+    width: 100%;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: white;
+}
+
+.text-success {
+    color: #53e29f;
+}
+
+/* Laning */
+
+.laning[_ngcontent-c51] {
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.laning__wrapper[_ngcontent-c51] {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.laning__col_header[_ngcontent-c51] {
+    width: 180px;
+}
+
+.laning__col[_ngcontent-c51] {
+    display: flex;
+    flex-direction: column;
+}
+
+.laning__header[_ngcontent-c51] {
+    display: flex;
+}
+
+.laning__heading[_ngcontent-c51] {
+    font-size: 34px;
+    color: #fff;
+    margin: 0;
+    line-height: normal;
+}
+
+.laning__supheader_faded[_ngcontent-c51] {
+    opacity: .5;
+    letter-spacing: normal;
+    margin-left: 4px;
+    padding-top: 14px;
+}
+
+.laning__text[_ngcontent-c51] {
+    font-size: 16px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.laning__heroes[_ngcontent-c51] {
+    display: flex;
+    align-items: center;
+}
+
+.laning__avatar[_ngcontent-c51] {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+
+.laning__text_between[_ngcontent-c49] {
+    padding: 0 10px;
+}
+
+.laning__total[_ngcontent-c51] {
+    display: flex;
+}
+
+.laning__advice[_ngcontent-c51] {
+    width: 245px;
+}
+
+.laning__supheader[_ngcontent-c51] {
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0;
+}
+
+.laning__text_medium[_ngcontent-c51] {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+
+.laning__text_cell[_ngcontent-c51] {
+    line-height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.laning__total[_ngcontent-c51] .laning__text_cell[_ngcontent-c51] {
+    margin-right: 5px;
+}
+
+.laning__text_large[_ngcontent-c51] {
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.laning__text_done[_ngcontent-c51] {
+    color: #5ae1a1;
+}
+
+.laning__total[_ngcontent-c51] .laning__text_large[_ngcontent-c51] {
+    margin-right: 15px;
+}
+
+.laning__total[_ngcontent-c51] .laning__text_cell[_ngcontent-c51] {
+    margin-right: 5px;
+}
+
+.laning__text_received[_ngcontent-c51] {
+    color: #d94118;
+}
+
+.laning__total[_ngcontent-c51] .laning__text_large[_ngcontent-c51] {
+    margin-right: 15px;
+}
+
+
+
+/* Heroes icon and items */
+
+
+.d2s {
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle; }
+
+.d2s[class^='mini-'], .d2s[class*='mini-'] {
+  background-image: url("minimap_hero_sheet2.png");
+  width: 32px;
+  height: 32px; }
+
+.d2s.mini-axe {
+  background-position: -0px -0px; }
+.d2s.mini-anti-mage {
+  background-position: -32px -0px; }
+.d2s.mini-crystal-maiden {
+  background-position: -64px -0px; }
+.d2s.mini-ancient-apparition {
+  background-position: -96px -0px; }
+.d2s.mini-batrider {
+  background-position: -128px -0px; }
+.d2s.mini-beastmaster {
+  background-position: -160px -0px; }
+.d2s.mini-bloodseeker {
+  background-position: -192px -0px; }
+.d2s.mini-bounty-hunter {
+  background-position: -224px -0px; }
+.d2s.mini-broodmother {
+  background-position: -256px -0px; }
+.d2s.mini-chen {
+  background-position: -288px -0px; }
+.d2s.mini-dark-seer {
+  background-position: -320px -0px; }
+.d2s.mini-dazzle {
+  background-position: -352px -0px; }
+.d2s.mini-death-prophet {
+  background-position: -384px -0px; }
+.d2s.mini-doom {
+  background-position: -416px -0px; }
+.d2s.mini-dragon-knight {
+  background-position: -448px -0px; }
+.d2s.mini-alchemist {
+  background-position: -480px -0px; }
+.d2s.mini-drow-ranger {
+  background-position: -0px -32px; }
+.d2s.mini-earthshaker {
+  background-position: -32px -32px; }
+.d2s.mini-enchantress {
+  background-position: -64px -32px; }
+.d2s.mini-enigma {
+  background-position: -96px -32px; }
+.d2s.mini-faceless-void {
+  background-position: -128px -32px; }
+.d2s.mini-natures-prophet {
+  background-position: -160px -32px; }
+.d2s.mini-huskar {
+  background-position: -192px -32px; }
+.d2s.mini-juggernaut {
+  background-position: -224px -32px; }
+.d2s.mini-kunkka {
+  background-position: -256px -32px; }
+.d2s.mini-leshrac {
+  background-position: -288px -32px; }
+.d2s.mini-lich {
+  background-position: -320px -32px; }
+.d2s.mini-life-stealer {
+  background-position: -352px -32px; }
+.d2s.mini-lina {
+  background-position: -384px -32px; }
+.d2s.mini-lion {
+  background-position: -416px -32px; }
+.d2s.mini-mirana {
+  background-position: -448px -32px; }
+.d2s.mini-morphling {
+  background-position: -480px -32px; }
+.d2s.mini-necrophos {
+  background-position: -0px -64px; }
+.d2s.mini-shadow-fiend {
+  background-position: -32px -64px; }
+.d2s.mini-night-stalker {
+  background-position: -64px -64px; }
+.d2s.mini-omniknight {
+  background-position: -96px -64px; }
+.d2s.mini-puck {
+  background-position: -128px -64px; }
+.d2s.mini-pudge {
+  background-position: -160px -64px; }
+.d2s.mini-pugna {
+  background-position: -192px -64px; }
+.d2s.mini-queen-of-pain {
+  background-position: -224px -64px; }
+.d2s.mini-clockwerk {
+  background-position: -256px -64px; }
+.d2s.mini-razor {
+  background-position: -288px -64px; }
+.d2s.mini-riki {
+  background-position: -320px -64px; }
+.d2s.mini-sand-king {
+  background-position: -352px -64px; }
+.d2s.mini-shadow-shaman {
+  background-position: -384px -64px; }
+.d2s.mini-silencer {
+  background-position: -416px -64px; }
+.d2s.mini-wraith-king {
+  background-position: -448px -64px; }
+.d2s.mini-slardar {
+  background-position: -480px -64px; }
+.d2s.mini-sniper {
+  background-position: -0px -96px; }
+.d2s.mini-spectre {
+  background-position: -32px -96px; }
+.d2s.mini-spirit-breaker {
+  background-position: -64px -96px; }
+.d2s.mini-storm-spirit {
+  background-position: -96px -96px; }
+.d2s.mini-sven {
+  background-position: -128px -96px; }
+.d2s.mini-tidehunter {
+  background-position: -160px -96px; }
+.d2s.mini-tinker {
+  background-position: -192px -96px; }
+.d2s.mini-tiny {
+  background-position: -224px -96px; }
+.d2s.mini-jakiro {
+  background-position: -256px -96px; }
+.d2s.mini-ursa {
+  background-position: -288px -96px; }
+.d2s.mini-vengeful-spirit {
+  background-position: -320px -96px; }
+.d2s.mini-venomancer {
+  background-position: -352px -96px; }
+.d2s.mini-viper {
+  background-position: -384px -96px; }
+.d2s.mini-warlock {
+  background-position: -416px -96px; }
+.d2s.mini-weaver {
+  background-position: -448px -96px; }
+.d2s.mini-windranger {
+  background-position: -480px -96px; }
+.d2s.mini-witch-doctor {
+  background-position: -0px -128px; }
+.d2s.mini-zeus {
+  background-position: -32px -128px; }
+.d2s.mini-invoker {
+  background-position: -64px -128px; }
+.d2s.mini-clinkz {
+  background-position: -96px -128px; }
+.d2s.mini-outworld-devourer {
+  background-position: -128px -128px; }
+.d2s.mini-bane {
+  background-position: -160px -128px; }
+.d2s.mini-shadow-demon {
+  background-position: -192px -128px; }
+.d2s.mini-lycan {
+  background-position: -224px -128px; }
+.d2s.mini-lone-druid {
+  background-position: -256px -128px; }
+.d2s.mini-brewmaster {
+  background-position: -288px -128px; }
+.d2s.mini-brewmaster-fire {
+  background-position: -320px -128px; }
+.d2s.mini-brewmaster-storm {
+  background-position: -352px -128px; }
+.d2s.mini-brewmaster-earth {
+  background-position: -384px -128px; }
+.d2s.mini-phantom-lancer {
+  background-position: -416px -128px; }
+.d2s.mini-chaos-knight {
+  background-position: -448px -128px; }
+.d2s.mini-phantom-assassin {
+  background-position: -480px -128px; }
+.d2s.mini-treant-protector {
+  background-position: -0px -160px; }
+.d2s.mini-luna {
+  background-position: -32px -160px; }
+.d2s.mini-ogre-magi {
+  background-position: -64px -160px; }
+.d2s.mini-gyrocopter {
+  background-position: -96px -160px; }
+.d2s.mini-rubick {
+  background-position: -128px -160px; }
+.d2s.mini-wisp {
+  background-position: -160px -160px; }
+.d2s.mini-disruptor {
+  background-position: -192px -160px; }
+.d2s.mini-undying {
+  background-position: -224px -160px; }
+.d2s.mini-naga-siren {
+  background-position: -256px -160px; }
+.d2s.mini-templar-assassin {
+  background-position: -288px -160px; }
+.d2s.mini-nyx-assassin {
+  background-position: -320px -160px; }
+.d2s.mini-keeper-of-the-light {
+  background-position: -352px -160px; }
+.d2s.mini-visage {
+  background-position: -384px -160px; }
+.d2s.mini-magnus {
+  background-position: -416px -160px; }
+.d2s.mini-meepo {
+  background-position: -448px -160px; }
+.d2s.mini-centaur-warrunner {
+  background-position: -480px -160px; }
+.d2s.mini-slark {
+  background-position: -0px -192px; }
+.d2s.mini-medusa {
+  background-position: -32px -192px; }
+.d2s.mini-timbersaw {
+  background-position: -64px -192px; }
+.d2s.mini-troll-warlord {
+  background-position: -96px -192px; }
+.d2s.mini-tusk {
+  background-position: -128px -192px; }
+.d2s.mini-bristleback {
+  background-position: -160px -192px; }
+.d2s.mini-skywrath-mage {
+  background-position: -192px -192px; }
+.d2s.mini-elder-titan {
+  background-position: -224px -192px; }
+.d2s.mini-abaddon {
+  background-position: -256px -192px; }
+.d2s.mini-ember-spirit {
+  background-position: -288px -192px; }
+.d2s.mini-legion-commander {
+  background-position: -320px -192px; }
+.d2s.mini-earth-spirit {
+  background-position: -352px -192px; }
+.d2s.mini-terrorblade {
+  background-position: -384px -192px; }
+.d2s.mini-phoenix {
+  background-position: -416px -192px; }
+.d2s.mini-techies {
+  background-position: -448px -192px; }
+.d2s.mini-oracle {
+  background-position: -64px -224px; }
+.d2s.mini-winter-wyvern {
+  background-position: -480px -192px; }
+.d2s.mini-lina-alt1 {
+  background-position: -480px -224px; }
+.d2s.mini-legion-commander-alt1 {
+  background-position: -448px -224px; }
+.d2s.mini-terrorblade-alt1 {
+  background-position: -416px -224px; }
+.d2s.mini-techies-alt1 {
+  background-position: -384px -224px; }
+.d2s.mini-nevermore-alt1 {
+  background-position: -352px -224px; }
+.d2s.mini-phantom-assassin-alt1 {
+  background-position: -320px -224px; }
+.d2s.mini-crystal-maiden-alt1 {
+  background-position: -288px -224px; }
+
+.d2s{
+  background-image: url("item_sheet.png");
+  width: 40px;
+  height: 30px; }
+
+.d2s.item-ward-observer, .d2s.item-42 {
+  background-position: -0px -0px; }
+.d2s.item-ward-sentry, .d2s.item-43 {
+  background-position: -0px -30px; }
+.d2s.item-wraith-band, .d2s.item-75 {
+  background-position: -40px -0px; }
+.d2s.item-yasha, .d2s.item-170 {
+  background-position: -40px -30px; }
+.d2s.item-abyssal-blade, .d2s.item-208 {
+  background-position: -0px -60px; }
+.d2s.item-drums-of-endurance, .d2s.item-43 {
+  background-position: -40px -60px; }
+.d2s.item-arcane-boots, .d2s.item-43 {
+  background-position: -0px -90px; }
+.d2s.item-armlet-of-mordiggian, .d2s.item-43 {
+  background-position: -40px -90px; }
+.d2s.item-assault-cuirass, .d2s.item-43 {
+  background-position: -80px -0px; }
+.d2s.item-basher, .d2s.item-43 {
+  background-position: -80px -30px; }
+.d2s.item-belt-of-strength, .d2s.item-43 {
+  background-position: -80px -60px; }
+.d2s.item-battlefury, .d2s.item-43 {
+  background-position: -80px -90px; }
+.d2s.item-black-king-bar, .d2s.item-43 {
+  background-position: -0px -120px; }
+.d2s.item-blade-mail, .d2s.item-43 {
+  background-position: -40px -120px; }
+.d2s.item-blade-of-alacrity, .d2s.item-43 {
+  background-position: -80px -120px; }
+.d2s.item-blades-of-attack, .d2s.item-43 {
+  background-position: -120px -0px; }
+.d2s.item-blink-dagger, .d2s.item-43 {
+  background-position: -120px -30px; }
+.d2s.item-bloodstone, .d2s.item-43 {
+  background-position: -120px -60px; }
+.d2s.item-boots-of-speed, .d2s.item-43 {
+  background-position: -120px -90px; }
+.d2s.item-band-of-elvenskin, .d2s.item-43 {
+  background-position: -120px -120px; }
+.d2s.item-bottle, .d2s.item-43 {
+  background-position: -0px -150px; }
+.d2s.item-bracer, .d2s.item-43 {
+  background-position: -40px -150px; }
+.d2s.item-iron-branch, .d2s.item-43 {
+  background-position: -80px -150px; }
+.d2s.item-broadsword, .d2s.item-43 {
+  background-position: -120px -150px; }
+.d2s.item-buckler, .d2s.item-43 {
+  background-position: -160px -0px; }
+.d2s.item-butterfly, .d2s.item-43 {
+  background-position: -160px -30px; }
+.d2s.item-chainmail, .d2s.item-43 {
+  background-position: -160px -60px; }
+.d2s.item-circlet, .d2s.item-43 {
+  background-position: -160px -90px; }
+.d2s.item-clarity, .d2s.item-43 {
+  background-position: -160px -120px; }
+.d2s.item-claymore, .d2s.item-43 {
+  background-position: -160px -150px; }
+.d2s.item-cloak, .d2s.item-43 {
+  background-position: -0px -180px; }
+.d2s.item-courier, .d2s.item-43 {
+  background-position: -40px -180px; }
+.d2s.item-crimson-guard, .d2s.item-43 {
+  background-position: -80px -180px; }
+.d2s.item-euls-scepter, .d2s.item-43 {
+  background-position: -120px -180px; }
+.d2s.item-dagon, .d2s.item-43 {
+  background-position: -160px -180px; }
+.d2s.item-demon-edge, .d2s.item-43 {
+  background-position: -0px -210px; }
+.d2s.item-desolator, .d2s.item-43 {
+  background-position: -40px -210px; }
+.d2s.item-diffusal-blade, .d2s.item-43 {
+  background-position: -80px -210px; }
+.d2s.item-dust, .d2s.item-43 {
+  background-position: -120px -210px; }
+.d2s.item-eaglesong, .d2s.item-43 {
+  background-position: -160px -210px; }
+.d2s.item-enchanted-mango, .d2s.item-43 {
+  background-position: -360px -360px;
+  height: 29px; }
+.d2s.item-energy-booster, .d2s.item-43 {
+  background-position: -200px -0px; }
+.d2s.item-ethereal-blade, .d2s.item-43 {
+  background-position: -200px -30px; }
+.d2s.item-salve, .d2s.item-43 {
+  background-position: -200px -60px; }
+.d2s.item-flying-courier, .d2s.item-43 {
+  background-position: -200px -90px; }
+.d2s.item-force-staff, .d2s.item-43 {
+  background-position: -200px -120px; }
+.d2s.item-gauntlet-of-strength, .d2s.item-43 {
+  background-position: -200px -150px; }
+.d2s.item-gem-of-true-sight, .d2s.item-43 {
+  background-position: -200px -180px; }
+.d2s.item-ghost-scepter, .d2s.item-43 {
+  background-position: -200px -210px; }
+.d2s.item-glimmer-cape, .d2s.item-43 {
+  background-position: -240px -390px;
+  height: 28px; }
+.d2s.item-gloves-of-haste, .d2s.item-43 {
+  background-position: -0px -240px; }
+.d2s.item-daedalus, .d2s.item-43 {
+  background-position: -40px -240px; }
+.d2s.item-guardian-greaves, .d2s.item-43 {
+  background-position: -0px -390px;
+  height: 29px; }
+.d2s.item-hand-of-midas, .d2s.item-43 {
+  background-position: -80px -240px; }
+.d2s.item-headdress , .d2s.item-43{
+  background-position: -120px -240px; }
+.d2s.item-heart-of-tarrasque, .d2s.item-43 {
+  background-position: -160px -240px; }
+.d2s.item-heavens-halberd, .d2s.item-43 {
+  background-position: -200px -240px; }
+.d2s.item-helm-of-iron-will, .d2s.item-43 {
+  background-position: -240px -0px; }
+.d2s.item-helm-of-the-dominator, .d2s.item-43 {
+  background-position: -240px -30px; }
+.d2s.item-hood-of-defiance, .d2s.item-43 {
+  background-position: -240px -60px; }
+.d2s.item-hyperstone, .d2s.item-43 {
+  background-position: -240px -90px; }
+.d2s.item-shadow-blade, .d2s.item-43 {
+  background-position: -240px -120px; }
+.d2s.item-javelin, .d2s.item-43 {
+  background-position: -240px -150px; }
+.d2s.item-crystalys, .d2s.item-43 {
+  background-position: -240px -180px; }
+.d2s.item-morbid-mask, .d2s.item-43 {
+  background-position: -240px -210px; }
+.d2s.item-lotus-orb, .d2s.item-43 {
+  background-position: -40px -390px;
+  height: 29px; }
+.d2s.item-maelstrom, .d2s.item-43 {
+  background-position: -240px -240px; }
+.d2s.item-magic-stick, .d2s.item-43 {
+  background-position: -0px -270px; }
+.d2s.item-magic-wand, .d2s.item-43 {
+  background-position: -40px -270px; }
+.d2s.item-manta-style, .d2s.item-43 {
+  background-position: -80px -270px; }
+.d2s.item-mantle-of-intelligence, .d2s.item-43 {
+  background-position: -120px -270px; }
+.d2s.item-mask-of-madness, .d2s.item-43 {
+  background-position: -160px -270px; }
+.d2s.item-medallion-of-courage, .d2s.item-43 {
+  background-position: -200px -270px; }
+.d2s.item-mekansm, .d2s.item-43 {
+  background-position: -240px -270px; }
+.d2s.item-mithril-hammer, .d2s.item-43 {
+  background-position: -280px -0px; }
+.d2s.item-mjollnir, .d2s.item-43 {
+  background-position: -280px -30px; }
+.d2s.item-monkey-king-bar, .d2s.item-43 {
+  background-position: -280px -60px; }
+.d2s.item-moon-shard, .d2s.item-43 {
+  background-position: -80px -390px;
+  height: 29px;, d2s.item-43 }
+.d2s.item-mystic-staff, .d2s.item-43 {
+  background-position: -280px -90px; }
+.d2s.item-necronomicon, .d2s.item-43 {
+  background-position: -280px -120px; }
+.d2s.item-null-talisman, .d2s.item-43 {
+  background-position: -280px -150px; }
+.d2s.item-oblivion-staff, .d2s.item-43 {
+  background-position: -280px -180px; }
+.d2s.item-octarine-core, .d2s.item-43 {
+  background-position: -120px -390px;
+  height: 29px; }
+.d2s.item-ogre-club, .d2s.item-43 {
+  background-position: -280px -210px; }
+.d2s.item-orb-of-venom, .d2s.item-43 {
+  background-position: -280px -240px; }
+.d2s.item-orchid-malevolence, .d2s.item-43 {
+  background-position: -280px -270px; }
+.d2s.item-perseverance, .d2s.item-43 {
+  background-position: -0px -300px; }
+.d2s.item-phase-boots, .d2s.item-43 {
+  background-position: -40px -300px; }
+.d2s.item-pipe-of-insight, .d2s.item-43 {
+  background-position: -80px -300px; }
+.d2s.item-platemail, .d2s.item-43 {
+  background-position: -120px -300px; }
+.d2s.item-point-booster, .d2s.item-43 {
+  background-position: -160px -300px; }
+.d2s.item-poor-mans-shield, .d2s.item-43 {
+  background-position: -200px -300px; }
+.d2s.item-power-treads, .d2s.item-43 {
+  background-position: -240px -300px; }
+.d2s.item-quarterstaff, .d2s.item-43 {
+  background-position: -280px -300px; }
+.d2s.item-quelling-blade, .d2s.item-43 {
+  background-position: -0px -330px; }
+.d2s.item-radiance, .d2s.item-43 {
+  background-position: -40px -330px; }
+.d2s.item-divine-rapier,.d2s.item-43 {
+  background-position: -80px -330px; }
+.d2s.item-reaver, .d2s.item-43 {
+  background-position: -120px -330px; }
+.d2s.item-refresher, .d2s.item-43 {
+  background-position: -160px -330px; }
+.d2s.item-sacred-relic, .d2s.item-43 {
+  background-position: -200px -330px; }
+.d2s.item-ring-of-aquila, .d2s.item-43 {
+  background-position: -240px -330px; }
+.d2s.item-ring-of-basilius, .d2s.item-43 {
+  background-position: -280px -330px; }
+.d2s.item-ring-of-health, .d2s.item-43 {
+  background-position: -320px -0px; }
+.d2s.item-ring-of-protection, .d2s.item-43 {
+  background-position: -320px -30px; }
+.d2s.item-ring-of-regen, .d2s.item-43 {
+  background-position: -320px -60px; }
+.d2s.item-robe-of-the-magi, .d2s.item-43 {
+  background-position: -320px -90px; }
+.d2s.item-rod-of-atos, .d2s.item-43 {
+  background-position: -320px -120px; }
+.d2s.item-sange-and-yasha, .d2s.item-43 {
+  background-position: -320px -150px; }
+.d2s.item-sange, .d2s.item-43 {
+  background-position: -320px -180px; }
+.d2s.item-satanic, .d2s.item-43 {
+  background-position: -320px -210px; }
+.d2s.item-shadow-amulet, .d2s.item-43 {
+  background-position: -320px -240px; }
+.d2s.item-scythe-of-vyse, .d2s.item-43 {
+  background-position: -320px -270px; }
+.d2s.item-shivas-guard, .d2s.item-43 {
+  background-position: -320px -300px; }
+.d2s.item-silver-edge, .d2s.item-43{
+  background-position: -160px -390px;
+  height: 29px; }
+.d2s.item-skadi, .d2s.item-43 {
+  background-position: -320px -330px; }
+.d2s.item-slippers-of-agility, .d2s.item-43 {
+  background-position: -0px -360px; }
+.d2s.item-smoke-of-deceit, .d2s.item-43 {
+  background-position: -40px -360px; }
+.d2s.item-sage-mask, .d2s.item-43 {
+  background-position: -80px -360px; }
+.d2s.item-solar-crest, .d2s.item-43 {
+  background-position: -200px -390px;
+  height: 29px;, d2s.item-43 }
+.d2s.item-soul-booster, .d2s.item-43 {
+  background-position: -120px -360px; }
+.d2s.item-soul-ring, .d2s.item-43 {
+  background-position: -160px -360px; }
+.d2s.item-linkens-sphere, .d2s.item-43 {
+  background-position: -200px -360px; }
+.d2s.item-staff-of-wizardry, .d2s.item-43 {
+  background-position: -240px -360px; }
+.d2s.item-stout-shield, .d2s.item-43 {
+  background-position: -280px -360px; }
+.d2s.item-talisman-of-evasion, .d2s.item-43 {
+  background-position: -320px -360px; }
+.d2s.item-tango, .d2s.item-43 {
+  background-position: -360px -0px; }
+.d2s.item-town-portal-scroll, .d2s.item-43 {
+  background-position: -360px -30px; }
+.d2s.item-tranquil-boots, .d2s.item-43 {
+  background-position: -360px -60px; }
+.d2s.item-boots-of-travel, .d2s.item-43 {
+  background-position: -360px -90px; }
+.d2s.item-ultimate-orb, .d2s.item-43 {
+  background-position: -360px -120px; }
+.d2s.item-ultimate-scepter, .d2s.item-43 {
+  background-position: -360px -150px; }
+.d2s.item-urn-of-shadows, .d2s.item-43 {
+  background-position: -360px -180px; }
+.d2s.item-vanguard, .d2s.item-43 {
+  background-position: -360px -210px; }
+.d2s.item-veil-of-discord, .d2s.item-43 {
+  background-position: -360px -240px; }
+.d2s.item-vitality-booster, .d2s.item-43 {
+  background-position: -360px -270px; }
+.d2s.item-vladmirs-offering, .d2s.item-43 {
+  background-position: -360px -300px; }
+.d2s.item-void-stone, .d2s.item-43 {
+  background-position: -360px -330px; }
+
+.d2s[class^='hero-'], .d2s[class*='hero-'] {
+  background-image: url("heroes_medium_sheet.png");
+  width: 92px;
+  height: 52px; }
+
+.d2s.hero-tidehunter {
+  background-position: -0px -0px; }
+.d2s.hero-timbersaw {
+  background-position: -0px -52px; }
+.d2s.hero-tinker {
+  background-position: -0px -104px; }
+.d2s.hero-tiny {
+  background-position: -92px -0px; }
+.d2s.hero-treant-protector {
+  background-position: -92px -52px; }
+.d2s.hero-troll-warlord {
+  background-position: -92px -104px; }
+.d2s.hero-tusk {
+  background-position: -0px -156px; }
+.d2s.hero-undying {
+  background-position: -92px -156px; }
+.d2s.hero-ursa {
+  background-position: -0px -208px; }
+.d2s.hero-vengeful-spirit {
+  background-position: -92px -208px; }
+.d2s.hero-venomancer {
+  background-position: -184px -0px; }
+.d2s.hero-viper {
+  background-position: -184px -52px; }
+.d2s.hero-visage {
+  background-position: -184px -104px; }
+.d2s.hero-warlock {
+  background-position: -184px -156px; }
+.d2s.hero-weaver {
+  background-position: -184px -208px; }
+.d2s.hero-windranger {
+  background-position: -0px -260px; }
+.d2s.hero-winter-wyvern {
+  background-position: -92px -260px; }
+.d2s.hero-witch-doctor {
+  background-position: -184px -260px; }
+.d2s.hero-wraith-king {
+  background-position: -0px -312px; }
+.d2s.hero-zeus {
+  background-position: -92px -312px; }
+.d2s.hero-abaddon {
+  background-position: -184px -312px; }
+.d2s.hero-alchemist {
+  background-position: -276px -0px; }
+.d2s.hero-ancient-apparition {
+  background-position: -276px -52px; }
+.d2s.hero-anti-mage {
+  background-position: -276px -104px; }
+.d2s.hero-axe {
+  background-position: -276px -156px; }
+.d2s.hero-bane {
+  background-position: -276px -208px; }
+.d2s.hero-batrider {
+  background-position: -276px -260px; }
+.d2s.hero-beastmaster {
+  background-position: -276px -312px; }
+.d2s.hero-bloodseeker {
+  background-position: -0px -364px; }
+.d2s.hero-bounty-hunter {
+  background-position: -92px -364px; }
+.d2s.hero-brewmaster {
+  background-position: -184px -364px; }
+.d2s.hero-bristleback {
+  background-position: -276px -364px; }
+.d2s.hero-broodmother {
+  background-position: -368px -0px; }
+.d2s.hero-centaur-warrunner {
+  background-position: -368px -52px; }
+.d2s.hero-chaos-knight {
+  background-position: -368px -104px; }
+.d2s.hero-chen {
+  background-position: -368px -156px; }
+.d2s.hero-clinkz {
+  background-position: -368px -208px; }
+.d2s.hero-clockwerk {
+  background-position: -368px -260px; }
+.d2s.hero-crystal-maiden {
+  background-position: -368px -312px; }
+.d2s.hero-dark-seer {
+  background-position: -368px -364px; }
+.d2s.hero-dazzle {
+  background-position: -0px -416px; }
+.d2s.hero-death-prophet {
+  background-position: -92px -416px; }
+.d2s.hero-disruptor {
+  background-position: -184px -416px; }
+.d2s.hero-doom {
+  background-position: -276px -416px; }
+.d2s.hero-dragon-knight {
+  background-position: -368px -416px; }
+.d2s.hero-drow-ranger {
+  background-position: -0px -468px; }
+.d2s.hero-earthshaker {
+  background-position: -92px -468px; }
+.d2s.hero-earth-spirit {
+  background-position: -184px -468px; }
+.d2s.hero-elder-titan {
+  background-position: -276px -468px; }
+.d2s.hero-ember-spirit {
+  background-position: -368px -468px; }
+.d2s.hero-enchantress {
+  background-position: -460px -0px; }
+.d2s.hero-enigma {
+  background-position: -460px -52px; }
+.d2s.hero-faceless-void {
+  background-position: -460px -104px; }
+.d2s.hero-gyrocopter {
+  background-position: -460px -156px; }
+.d2s.hero-huskar {
+  background-position: -460px -208px; }
+.d2s.hero-invoker {
+  background-position: -460px -260px; }
+.d2s.hero-io {
+  background-position: -460px -312px; }
+.d2s.hero-jakiro {
+  background-position: -460px -364px; }
+.d2s.hero-juggernaut {
+  background-position: -460px -416px; }
+.d2s.hero-keeper-of-the-light {
+  background-position: -460px -468px; }
+.d2s.hero-kunkka {
+  background-position: -0px -520px; }
+.d2s.hero-legion-commander {
+  background-position: -92px -520px; }
+.d2s.hero-leshrac {
+  background-position: -184px -520px; }
+.d2s.hero-lich {
+  background-position: -276px -520px; }
+.d2s.hero-lifestealer {
+  background-position: -368px -520px; }
+.d2s.hero-lina {
+  background-position: -460px -520px; }
+.d2s.hero-lion {
+  background-position: -0px -572px; }
+.d2s.hero-lone-druid {
+  background-position: -92px -572px; }
+.d2s.hero-luna {
+  background-position: -184px -572px; }
+.d2s.hero-lycan {
+  background-position: -276px -572px; }
+.d2s.hero-magnus {
+  background-position: -368px -572px; }
+.d2s.hero-medusa {
+  background-position: -460px -572px; }
+.d2s.hero-meepo {
+  background-position: -552px -0px; }
+.d2s.hero-mirana {
+  background-position: -552px -52px; }
+.d2s.hero-morphling {
+  background-position: -552px -104px; }
+.d2s.hero-naga-siren {
+  background-position: -552px -156px; }
+.d2s.hero-natures-prophet {
+  background-position: -552px -208px; }
+.d2s.hero-necrophos {
+  background-position: -552px -260px; }
+.d2s.hero-night-stalker {
+  background-position: -552px -312px; }
+.d2s.hero-nyx-assassin {
+  background-position: -552px -364px; }
+.d2s.hero-ogre-magi {
+  background-position: -552px -416px; }
+.d2s.hero-omniknight {
+  background-position: -552px -468px; }
+.d2s.hero-oracle {
+  background-position: -552px -520px; }
+.d2s.hero-outworld-devourer {
+  background-position: -552px -572px; }
+.d2s.hero-phantom-assassin {
+  background-position: -0px -624px; }
+.d2s.hero-phantom-lancer {
+  background-position: -92px -624px; }
+.d2s.hero-phoenix {
+  background-position: -184px -624px; }
+.d2s.hero-puck {
+  background-position: -276px -624px; }
+.d2s.hero-pudge {
+  background-position: -368px -624px; }
+.d2s.hero-pugna {
+  background-position: -460px -624px; }
+.d2s.hero-queen-of-pain {
+  background-position: -552px -624px; }
+.d2s.hero-razor {
+  background-position: -0px -676px; }
+.d2s.hero-riki {
+  background-position: -92px -676px; }
+.d2s.hero-rubick {
+  background-position: -184px -676px; }
+.d2s.hero-sand-king {
+  background-position: -276px -676px; }
+.d2s.hero-shadow-demon {
+  background-position: -368px -676px; }
+.d2s.hero-shadow-fiend {
+  background-position: -460px -676px; }
+.d2s.hero-shadow-shaman {
+  background-position: -552px -676px; }
+.d2s.hero-silencer {
+  background-position: -644px -0px; }
+.d2s.hero-skywrath-mage {
+  background-position: -644px -52px; }
+.d2s.hero-slardar {
+  background-position: -644px -104px; }
+.d2s.hero-slark {
+  background-position: -644px -156px; }
+.d2s.hero-sniper {
+  background-position: -644px -208px; }
+.d2s.hero-spectre {
+  background-position: -644px -260px; }
+.d2s.hero-spirit-breaker {
+  background-position: -644px -312px; }
+.d2s.hero-storm-spirit {
+  background-position: -644px -364px; }
+.d2s.hero-sven {
+  background-position: -644px -416px; }
+.d2s.hero-techies {
+  background-position: -644px -468px; }
+.d2s.hero-templar-assassin {
+  background-position: -644px -520px; }
+.d2s.hero-terrorblade {
+  background-position: -644px -572px; }
+
+.d2s[class^='hero-'].small, .d2s[class*='hero-'].small {
+  background-image: url("heroes_small_sheet.png");
+  width: 44px;
+  height: 25px; }
+
+.d2s.small.hero-alchemist {
+  background-position: -0px -0px; }
+.d2s.small.hero-ancient-apparition {
+  background-position: -0px -25px; }
+.d2s.small.hero-anti-mage {
+  background-position: -0px -50px; }
+.d2s.small.hero-axe {
+  background-position: -44px -0px; }
+.d2s.small.hero-bane {
+  background-position: -44px -25px; }
+.d2s.small.hero-batrider {
+  background-position: -44px -50px; }
+.d2s.small.hero-beastmaster {
+  background-position: -0px -75px; }
+.d2s.small.hero-bloodseeker {
+  background-position: -44px -75px; }
+.d2s.small.hero-bounty-hunter {
+  background-position: -0px -100px; }
+.d2s.small.hero-brewmaster {
+  background-position: -44px -100px; }
+.d2s.small.hero-bristleback {
+  background-position: -88px -0px; }
+.d2s.small.hero-broodmother {
+  background-position: -88px -25px; }
+.d2s.small.hero-centaur-warrunner {
+  background-position: -88px -50px; }
+.d2s.small.hero-chaos-knight {
+  background-position: -88px -75px; }
+.d2s.small.hero-chen {
+  background-position: -88px -100px; }
+.d2s.small.hero-clinkz {
+  background-position: -0px -125px; }
+.d2s.small.hero-clockwerk {
+  background-position: -44px -125px; }
+.d2s.small.hero-crystal-maiden {
+  background-position: -88px -125px; }
+.d2s.small.hero-dark-seer {
+  background-position: -0px -150px; }
+.d2s.small.hero-dazzle {
+  background-position: -44px -150px; }
+.d2s.small.hero-death-prophet {
+  background-position: -88px -150px; }
+.d2s.small.hero-disruptor {
+  background-position: -132px -0px; }
+.d2s.small.hero-doom {
+  background-position: -132px -25px; }
+.d2s.small.hero-dragon-knight {
+  background-position: -132px -50px; }
+.d2s.small.hero-drow-ranger {
+  background-position: -132px -75px; }
+.d2s.small.hero-earthshaker {
+  background-position: -132px -100px; }
+.d2s.small.hero-earth-spirit {
+  background-position: -132px -125px; }
+.d2s.small.hero-elder-titan {
+  background-position: -132px -150px; }
+.d2s.small.hero-ember-spirit {
+  background-position: -0px -175px; }
+.d2s.small.hero-enchantress {
+  background-position: -44px -175px; }
+.d2s.small.hero-enigma {
+  background-position: -88px -175px; }
+.d2s.small.hero-faceless-void {
+  background-position: -132px -175px; }
+.d2s.small.hero-gyrocopter {
+  background-position: -176px -0px; }
+.d2s.small.hero-huskar {
+  background-position: -176px -25px; }
+.d2s.small.hero-invoker {
+  background-position: -176px -50px; }
+.d2s.small.hero-io {
+  background-position: -176px -75px; }
+.d2s.small.hero-jakiro {
+  background-position: -176px -100px; }
+.d2s.small.hero-juggernaut {
+  background-position: -176px -125px; }
+.d2s.small.hero-keeper-of-the-light {
+  background-position: -176px -150px; }
+.d2s.small.hero-kunkka {
+  background-position: -176px -175px; }
+.d2s.small.hero-legion-commander {
+  background-position: -0px -200px; }
+.d2s.small.hero-leshrac {
+  background-position: -44px -200px; }
+.d2s.small.hero-lich {
+  background-position: -88px -200px; }
+.d2s.small.hero-lifestealer {
+  background-position: -132px -200px; }
+.d2s.small.hero-lina {
+  background-position: -176px -200px; }
+.d2s.small.hero-lion {
+  background-position: -0px -225px; }
+.d2s.small.hero-lone-druid {
+  background-position: -44px -225px; }
+.d2s.small.hero-luna {
+  background-position: -88px -225px; }
+.d2s.small.hero-lycan {
+  background-position: -132px -225px; }
+.d2s.small.hero-magnus {
+  background-position: -176px -225px; }
+.d2s.small.hero-medusa {
+  background-position: -220px -0px; }
+.d2s.small.hero-meepo {
+  background-position: -220px -25px; }
+.d2s.small.hero-mirana {
+  background-position: -220px -50px; }
+.d2s.small.hero-morphling {
+  background-position: -220px -75px; }
+.d2s.small.hero-naga-siren {
+  background-position: -220px -100px; }
+.d2s.small.hero-natures-prophet {
+  background-position: -220px -125px; }
+.d2s.small.hero-necrophos {
+  background-position: -220px -150px; }
+.d2s.small.hero-night-stalker {
+  background-position: -220px -175px; }
+.d2s.small.hero-nyx-assassin {
+  background-position: -220px -200px; }
+.d2s.small.hero-ogre-magi {
+  background-position: -220px -225px; }
+.d2s.small.hero-omniknight {
+  background-position: -0px -250px; }
+.d2s.small.hero-oracle {
+  background-position: -44px -250px; }
+.d2s.small.hero-outworld-devourer {
+  background-position: -88px -250px; }
+.d2s.small.hero-phantom-assassin {
+  background-position: -132px -250px; }
+.d2s.small.hero-phantom-lancer {
+  background-position: -176px -250px; }
+.d2s.small.hero-phoenix {
+  background-position: -220px -250px; }
+.d2s.small.hero-puck {
+  background-position: -0px -275px; }
+.d2s.small.hero-pudge {
+  background-position: -44px -275px; }
+.d2s.small.hero-pugna {
+  background-position: -88px -275px; }
+.d2s.small.hero-queen-of-pain {
+  background-position: -132px -275px; }
+.d2s.small.hero-razor {
+  background-position: -176px -275px; }
+.d2s.small.hero-riki {
+  background-position: -220px -275px; }
+.d2s.small.hero-rubick {
+  background-position: -264px -0px; }
+.d2s.small.hero-sand-king {
+  background-position: -264px -25px; }
+.d2s.small.hero-shadow-demon {
+  background-position: -264px -50px; }
+.d2s.small.hero-shadow-fiend {
+  background-position: -264px -75px; }
+.d2s.small.hero-shadow-shaman {
+  background-position: -264px -100px; }
+.d2s.small.hero-silencer {
+  background-position: -264px -125px; }
+.d2s.small.hero-skywrath-mage {
+  background-position: -264px -150px; }
+.d2s.small.hero-slardar {
+  background-position: -264px -175px; }
+.d2s.small.hero-slark {
+  background-position: -264px -200px; }
+.d2s.small.hero-sniper {
+  background-position: -264px -225px; }
+.d2s.small.hero-spectre {
+  background-position: -264px -250px; }
+.d2s.small.hero-spirit-breaker {
+  background-position: -264px -275px; }
+.d2s.small.hero-storm-spirit {
+  background-position: -0px -300px; }
+.d2s.small.hero-sven {
+  background-position: -44px -300px; }
+.d2s.small.hero-techies {
+  background-position: -88px -300px; }
+.d2s.small.hero-templar-assassin {
+  background-position: -132px -300px; }
+.d2s.small.hero-terrorblade {
+  background-position: -176px -300px; }
+.d2s.small.hero-tidehunter {
+  background-position: -220px -300px; }
+.d2s.small.hero-timbersaw {
+  background-position: -264px -300px; }
+.d2s.small.hero-tinker {
+  background-position: -0px -325px; }
+.d2s.small.hero-tiny {
+  background-position: -44px -325px; }
+.d2s.small.hero-treant-protector {
+  background-position: -88px -325px; }
+.d2s.small.hero-troll-warlord {
+  background-position: -132px -325px; }
+.d2s.small.hero-tusk {
+  background-position: -176px -325px; }
+.d2s.small.hero-undying {
+  background-position: -220px -325px; }
+.d2s.small.hero-ursa {
+  background-position: -264px -325px; }
+.d2s.small.hero-vengeful-spirit {
+  background-position: -308px -0px; }
+.d2s.small.hero-venomancer {
+  background-position: -308px -25px; }
+.d2s.small.hero-viper {
+  background-position: -308px -50px; }
+.d2s.small.hero-visage {
+  background-position: -308px -75px; }
+.d2s.small.hero-warlock {
+  background-position: -308px -100px; }
+.d2s.small.hero-weaver {
+  background-position: -308px -125px; }
+.d2s.small.hero-windranger {
+  background-position: -308px -150px; }
+.d2s.small.hero-winter-wyvern {
+  background-position: -308px -175px; }
+.d2s.small.hero-witch-doctor {
+  background-position: -308px -200px; }
+.d2s.small.hero-wraith-king {
+  background-position: -308px -225px; }
+.d2s.small.hero-zeus {
+  background-position: -308px -250px; }
+.d2s.small.hero-abaddon {
+  background-position: -308px -275px; }
+
+.d2s[class^='stat-'], .d2s[class*='stat-'] {
+  background-image: url("stat_sheet.png");
+  width: 32px;
+  height: 32px; }
+
+.d2s.stat-strength {
+  background-position: 0 0; }
+.d2s.stat-agility {
+  background-position: -32px -0px; }
+.d2s.stat-intelligence {
+  background-position: -64px 0; }

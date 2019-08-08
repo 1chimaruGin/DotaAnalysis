@@ -1,0 +1,17 @@
+{% extends 'web_templates/navigation_bar.html' %}
+{% load bootstrap4 %}
+{% load timetags %}
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% block main %}
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+<form method="POST" class="form">
+    {% csrf_token %}
+    {% buttons %}
+    <button type="submit" class="btn btn-success">Logout
+    </button>
+  {% endbuttons %}
+</form>
+{% endblock %}

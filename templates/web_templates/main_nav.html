@@ -1,0 +1,53 @@
+{% extends 'web_templates/main.html' %}
+{% load static %}
+{% block nav %}
+    <nav class="navbar navbar-expand-lg" style="background: rgb(25, 56, 105);">
+        <a class="navbar-brand" href="{% url 'home_page' %}"><img src="{% static 'image/bleach3.png' %}" style="height: 60px; width: 60px; " alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                   <button type="button" class="btn btn-outline-success" onclick="location.href='{% url 'home_page' %}'" >Home</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success" onclick="location.href='{% url 'dota2news' %}'">Dota2 News</button>
+                </li>
+                 <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success" onclick="location.href='{% url 'search_id' %}'">Search Player</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success">Trending</button>
+                </li>
+
+            </ul>
+            <div _ngcontent-c26 class="auth-block">
+                <button class="dropdown-toggle menu_btn" type="button" data-toggle="dropdown">
+                <div _ngcontent-c26 class="top-line">
+                    <img _ngcontent-c26 class="avatar" alt=""
+                         src="{{ avatar }}">
+                    <span _ngcontent-c26 class="username">{{ personaname }}</span>
+                </div>
+                    <span class="caret"></span></button>
+                <ul _ngcontent-c26 class="dropdown-menu">
+                    <li _ngcontent-c26>
+                        <a _ngcontent-c26 class="settings"> Settings </a>
+                    </li>
+                    <li>
+                        <a _ngcontent-c26 class="settings" href="{% url 'logout' %}"> Log out </a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            -->
+        </div>
+    </nav>
+{% endblock %}

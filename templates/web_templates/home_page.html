@@ -1,0 +1,271 @@
+{% extends 'web_templates/main_nav.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load fontawesome %}
+{% load timetags %}
+{% fontawesome_stylesheet %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% block main %}
+    <div _ngcontent-c27 class="summary">
+        <div _ngcontent-c16 class="section">
+            <nav _ngcontent-c28 class="nav">
+                <div _ngcontent-c28 class="nav__group">
+                    <button type="button" class="btn btn-primary">week</button>
+                    <button type="button" class="btn btn-secondary">month</button>
+                </div>
+                &nbsp; &nbsp;
+                <div _ngcontent-c28 class="nav__group">
+                    <button type="button" class="btn btn-primary">all</button>
+                    <button type="button" class="btn btn-secondary">solo</button>
+                    <button type="button" class="btn btn-secondary">party</button>
+                </div>
+            </nav>
+            <div _ngcontent-c27 class="summary__subheader">
+                <h3 _ngcontent-c27>
+                    <span _ngcontent-c27>Summary</span>
+                    <span _ngcontent-c27 class="summary__subheader summary__subheader_playerName">{{ personaname }}</span>
+                </h3>
+            </div>
+            <div _ngcontent-c29 class="period">
+                <a _ngcontent-c29 class="period__arrow"></a>
+                <div _ngcontent-c29 class="period__title">
+                    {% if same_week %}
+                        <span _ngcontent-c29>{{ prev_week | print_week }}</span>
+                        {% else %}
+                        <span _ngcontent-c29>{{ prev_week | print_week }} {{ prev_week | print_month }}</span>
+                    {% endif %}
+                    <span _ngcontent-c29 class="period__d1"> - </span>
+                    <span _ngcontent-c29>{{ this_week | print_week }} {{ this_week | print_month }}</span>
+                </div>
+                <a _ngcontent-c29 class="period__arrow"></a>
+            </div>
+            <div _ngcontent-c30 class="resume">
+                <div _ngcontent-c30 class="resume__content">
+                    <h2 _ngcontent-c30 class="resume__title">On average, {% if same_week %}{{ prev_week | print_week }}{% else %}{{ prev_week | print_week }} {{ prev_week | print_month }}{% endif %} - {{ this_week | print_week }} {{ this_week | print_month }}, you played like
+                    <span style="color: rgb(135, 225, 110);"> Divine </span>
+                    </h2>
+                    <div _ngcontent-c38 class="resume__shield icon-mmr_7"></div>
+                </div>
+            </div>
+            <div _ngcontent-c30 class="resume__values-wrapper">
+                <div _ngcontent-c30 class="resume__values">
+                    <div _ngcontent-c30 class="resume__data resume__data_matches ng-star-inserted">
+                        <div _ngcontent-c30 class="resume__subheader">Matches</div>
+                        <div _ngcontent-c30 class="resume__value">{{ match_count }}</div>
+                    </div>
+                    <div _ngcontent-c30 class="resume__data resume__data_wins ng-star-inserted">
+                        <div _ngcontent-c30 class="resume__subheader">Wins</div>
+                        <div _ngcontent-c30 class="resume__value">
+                            {{ win_count }}
+                        </div>
+                    </div>
+                    <div _ngcontent-c30 class="resume__data resume__data_loses ng-star-inserted">
+                        <div _ngcontent-c30 class="resume__subheader">Loses</div>
+                        <div _ngcontent-c30 class="resume__value">{{ loss_count }}</div>
+                    </div>
+                    <div _ngcontent-c30 class="resume__data resume__data_winrate ng-star-inserted">
+                        <div _ngcontent-c30 class="resume__subheader">Winrate</div>
+                        <div _ngcontent-c30 class="resume__value">{{ winrate }}%</div>
+                    </div>
+                    {% if mmr_diff <= 0 %}
+                        <div _ngcontent-c30 class="resume__data resume__data_mmr-down ng-star-inserted">
+                            <div _ngcontent-c30 class="resume__subheader">~MMR Diff</div>
+                            <div _ngcontent-c30 class="resume__value">{{ mmr_diff }}</div>
+                        </div>
+                        {% else %}
+                        <div _ngcontent-c30 class="resume__data resume__data_mmr-up ng-star-inserted">
+                            <div _ngcontent-c30 class="resume__subheader">~MMR Diff</div>
+                            <div _ngcontent-c30 class="resume__value">+{{ mmr_diff }}</div>
+                        </div>
+                    {% endif %}
+                    <div _ngcontent-c30 class="resume__data ng-star-inserted">
+                        <div _ngcontent-c30 class="resume__subheader">Queue</div>
+                        <div _ngcontent-c30 class="resume__value">All</div>
+                    </div>
+                    <div _ngcontent-c30 class="resume__data">
+                        <div _ngcontent-c30 class="resume__subheader">Favourite role</div>
+                        <div _ngcontent-c30 class="resume__value">Carry</div>
+                    </div>
+                </div>
+            </div>
+            <div _ngcontent-c39 class="sharing">
+                <div _ngcontent-c39 class="sharing__social-links">
+                    <div _ngcontent-c39 class="sharing__title"> Share with </div>
+                    <a _ngcontent-c39  class="sharing__provider ">
+                        <i _ngcontent-c39 class="facebook_icon" ></i>
+                    </a>
+                    <a _ngcontent-c39 class="sharing__provider">
+                        <i _ngcontent-c39 class="twitter_icon" ></i>
+                    </a>
+                    <a _ngcontent-c39 class="sharing__provider">
+                        <i _ngcontent-c39 class="linkin_icon" ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    <!-- Match for period end here -->
+
+    <!-- Analysis -->
+    <div _ngcontent-c27 class="summary__content">
+        <div _ngcontent-c16 class="section">
+                <div _ngcontent-c31 class="shields">
+                    <h3 _ngcontent-c31 class="shields__title">Particular skills</h3>
+                    <div _ngcontent-c31 class="shields__list">
+                        <div _ngcontent-c31 class="shields__item">
+                            <div _ngcontent-c38 class="tooltip__trigger">
+                                <div _ngcontent-c31 class="shields__image icon-mmr_7"></div>
+                            </div>
+                            <div _ngcontent-c31 class="shields__header">Lost time</div>
+                        </div>
+                        <div _ngcontent-c31 class="shields__item">
+                            <div _ngcontent-c38 class="tooltip__trigger">
+                                <div _ngcontent-c31 class="shields__image icon-mmr_6"></div>
+                            </div>
+                            <div _ngcontent-c31 class="shields__header">Warding</div>
+                        </div>
+                        <div _ngcontent-c31 class="shields__item">
+                            <div _ngcontent-c38 class="tooltip__trigger">
+                                <div _ngcontent-c31 class="shields__image icon-mmr_8"></div>
+                            </div>
+                            <div _ngcontent-c31 class="shields__header">Micro</div>
+                        </div>
+                        <div _ngcontent-c31 class="shields__item">
+                            <div _ngcontent-c38 class="tooltip__trigger">
+                                <div _ngcontent-c31 class="shields__image icon-mmr_6"></div>
+                            </div>
+                            <div _ngcontent-c31 class="shields__header">D. priority</div>
+                        </div>
+                        <div _ngcontent-c31 class="shields__item">
+                            <div _ngcontent-c38 class="tooltip__trigger">
+                                <div _ngcontent-c31 class="shields__image icon-mmr_7"></div>
+                            </div>
+                            <div _ngcontent-c31 class="shields__header">Gangs</div>
+                        </div>
+                        <div _ngcontent-c31 class="shields__item">
+                            <div _ngcontent-c38 class="tooltip__trigger">
+                                <div _ngcontent-c31 class="shields__image icon-mmr_7"></div>
+                            </div>
+                            <div _ngcontent-c31 class="shields__header">Deaths</div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+        </div>
+    </div>
+    <div _ngcontent-c16 class="section">
+        <div _ngcontent-c80 class="matches">
+            <div _ngcontent-c36 class="matches__title" id="allMatches">Matches for period</div>
+            <!-- Matches list Start Here -->
+           {% for match in recentMatches %}
+             <div _ngcontent-c36 class="matches__list">
+                <a _ngcontent-c36 class="matches__item text-dark btn" href="{% url 'detail_view' match.match_id%}">
+                    <div _ngcontent-c36 class="matches__gap">
+                        <div _ngcontent-c36 class="matches__gap-status">FINISHED</div>
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_date ">
+                        <time _ngcontent-c36 class="matches__date">
+                                {{ match.start_time|print_timestamp }}
+                        </time>
+                        <div _ngcontent-c36 class="matches__meta">
+                            {% if not match.party_size %}
+                                Solo
+                                {% else %}
+                                Party
+                            {% endif %}
+                            <span _ngcontent-c36>
+                             {% if match.lobby_type is 5 or match.lobby_type is 6 or match.lobby_type is 7 %}
+                                 Ranked
+                                 {% else %}
+                                 Normal
+                             {% endif %}
+                            </span>
+                        </div>
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_status">
+                            {% if match.player_slot <= 127 and match.radiant_win%}
+                                <div _ngcontent-c36 class="matches__status_win">
+                                    Victory
+                                </div>
+                            {% elif match.player_slot >= 127 and not match.radiant_win %}
+                                <div _ngcontent-c36 class="matches__status_win">
+                                    Victory
+                                </div>
+                            {% else %}
+                                <div _ngcontent-c36 class="matches__status_lose">
+                                    Defeat
+                                </div>
+                            {% endif %}
+
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_hero">
+                        <div _ngcontent-c36 class="matches__hero ">
+                            <div _ngcontent-c36 class="d2mh hero-{{ match.hero_id }}"></div>
+                            {% for hero in heroes %}
+                                    {% if hero.id == match.hero_id %}
+                                        <div _ngcontent-c36 class="matches__hero-title">{{ hero.localized_name }}</div>
+                                    {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_role ">
+                        {% if match.player_slot <= 127%}
+                             {% if match.lane is 1 %}
+                                <div _ngcontent-c36 class="matches__value">Safe</div>
+                                 {% elif match.lane is 2 %}
+                                 <div _ngcontent-c36 class="matches__value">Midlaner</div>
+                                 {% else %}
+                                 <div _ngcontent-c36 class="matches__value">Offlaner</div>
+                             {% endif %}
+                        {% else %}
+                            {% if match.lane is 1 %}
+                                <div _ngcontent-c36 class="matches__value">Offlaner</div>
+                                 {% elif match.lane is 2 %}
+                                 <div _ngcontent-c36 class="matches__value">Midlaner</div>
+                                 {% else %}
+                                    {% if match.lane_role is 1 %}
+                                        <div _ngcontent-c36 class="matches__value">Carry</div>
+                                        {% else %}
+                                        <div _ngcontent-c36 class="matches__value">Support</div>
+                                    {% endif %}
+                             {% endif %}
+                        {% endif %}
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_lane ">
+                        {% if match.player_slot <= 127%}
+                             {% if match.lane is 1 %}
+                                <div _ngcontent-c36 class="matches__value">Safe</div>
+                                 {% elif match.lane is 2 %}
+                                 <div _ngcontent-c36 class="matches__value">Midlane</div>
+                                 {% else %}
+                                 <div _ngcontent-c36 class="matches__value">Offlane</div>
+                             {% endif %}
+                        {% else %}
+                            {% if match.lane is 1 %}
+                                <div _ngcontent-c36 class="matches__value">Offlane</div>
+                                 {% elif match.lane is 2 %}
+                                 <div _ngcontent-c36 class="matches__value">Midlane</div>
+                                 {% else %}
+                                 <div _ngcontent-c36 class="matches__value">Safe</div>
+                             {% endif %}
+                        {% endif %}
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_kda">
+                        <div _ngcontent-c36 class="matches__value ">{{ match.kills }}/{{ match.deaths }}/{{ match.assists }}</div>
+
+                    </div>
+                    <div _ngcontent-c36 class="matches__col matches__col_shield">
+                        <div _ngcontent-c36 class="matches__shield icon-mmr_7"></div>
+                    </div>
+                </a>
+            </div>
+         {% endfor %}
+
+            <!-- Matches list end Here -->
+        </div>
+    </div>
+    </div>
+{% endblock %}
+

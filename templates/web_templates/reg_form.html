@@ -1,0 +1,29 @@
+{% extends 'web_templates/navigation_bar.html' %}
+{% load bootstrap4 %}
+{% load timetags %}
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+{% block main %}
+{# Display django.contrib.messages as Bootstrap alerts #}
+<form method="POST" class="form">
+    {% csrf_token %}
+    {% if form.errors %}
+    <span style="color: red;"> {{ form.errors }} </span>
+    {% endif %}
+    <br>
+    {{ form.username }}
+    <br>
+    {{ form.email }}
+    <br>
+    {{ form.password1 }}
+    <br>
+    {{ form.password2 }}
+    <br>
+    {% buttons %}
+    <button type="submit" class="btn btn-success">Register</button>
+    {% endbuttons %}
+</form>
+{% endblock %}

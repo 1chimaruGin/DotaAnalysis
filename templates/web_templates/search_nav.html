@@ -1,0 +1,26 @@
+{% extends 'web_templates/index.html' %}
+{% load static %}
+{% block nav %}
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="{% static 'image/bleach3.png' %}" style="height: 60px; width: 60px; " alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success" onclick="location.href='{% url 'home_page' %}'">Home</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success" onclick="location.href='{% url 'dota2news' %}'" >Dota 2 News</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success" onclick="location.href='{% url 'search_id' %}'">Search Player</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success">Trending</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}

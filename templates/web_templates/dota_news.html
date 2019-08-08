@@ -1,0 +1,126 @@
+{% extends 'web_templates/main_nav.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load fontawesome %}
+
+{% fontawesome_stylesheet %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% block main %}
+    <!-- Play like br nyr yoe yoe-->
+    <div _ngcontent-c39 class="tiles">
+        <div _ngcontent-c39 class="tiles__tile">
+            <div _ngcontent-c39 class="summary" style="background-color: rgba(0,0,0,.5)">
+            <h2 class="entry-header">
+                Dota 2 Update - July 10th, 2019
+            </h2>
+            <div class="entry-meta">
+                July 10, 2019, Valve
+            </div>
+            <div class="entry-content">
+                        Immortal Treasures:
+                        <br>
+                        - Added custom sound effects for Pugna, Timber, Lion, Warlock, Centaur and Lifestealer immortals.
+                        <br>
+                        Mo'rokai:
+                        <br>
+                        - Added a 100 point reward for losses.
+                        <br>
+                        - Increased the point reward for winning to 300 from 250 (the total for winning with a bonus token
+                        <br>
+                        is unchanged).
+                        <br>
+                        - Jungle Map and Weather effects are no longer automatically applied
+                        <br>
+                        - Each team now has two guaranteed bans.
+                        <br>
+                        - Increased experience, gold and essence gain by 30%.
+                        <br>
+                        - Wagering and Tipping have been added.
+                        <br>
+                        - Updated the Mo'rokai Event page in the dashboard.
+                        <br>
+                        - Penalties are now being assessed for abandons, and games should now be correctly marked as safe
+                        <br>
+                        to leave when appropriate.
+                        <br>
+                        - Fixed a bug that prevented wins from applying towards Jungle Expedition and Daily/Weekly Quest
+                        <br>
+                        progress.
+                        <br>
+                        - Fixed a bug that allowed players to not be assigned a hero if they were disconnected during the
+                        <br>
+                        hero pick phase.
+                        <br>
+                        - Fixed a bug that caused bonus tokens not awarding the correct number of additional points.
+                        <br>
+                        Players are being granted 1000 points
+                        <br>
+                        for each bonus token consumed, up to that users point cap for the week in which it was consumed.
+                        <br clear="left">
+                    </div>
+                <div class="dota_rule"></div>
+                    <h2 class="entry-header">
+                        Dota 2 Update - July 2nd, 2019
+                    </h2>
+                    <div class="entry-meta">
+                        July 2, 2019, Valve
+                    </div>
+                    <div class="entry-content">
+                        - Some more minor performance improvements (including improvements to Wukong's Command)
+                        <br>
+                        - Fixed Pangolier's Rolling Thunder interaction with knockback abilities
+                        <br>
+                        - Fixed Ogre Magi's Multicast continuing to stun if you buyback quickly
+                        <br>
+                        - Fixed a bug that caused Monkey King to have one less soldier in the area
+                        <br clear="left">
+                    </div>
+                <div class="dota_rule"></div>
+                    <h2 class="entry-header">
+                        Dota 2 Update - June 28th, 2019
+                    </h2>
+                    <div class="entry-meta">
+                        June 28, 2019, Valve
+                    </div>
+                    <div class="entry-content">
+                        Earlier today we disabled a loophole that allowed players to purchase two of the Weekend Bundle
+                        <br>
+                        rather than just one. Enough people exploited this loophole that we have decided that, for the
+                        <br>
+                        next 24 hours only, we will give a chance for players who did not exploit it to also buy up to
+                        <br>
+                        two bundles total within the client directly.
+                        <br clear="left">
+                    </div>
+                <div class="dota_rule"></div>
+                    <h2 class="entry-header">
+                        Dota 2 Update - June 5th, 2019
+                    </h2>
+                    <div class="entry-meta">
+                        June 5, 2019, Valve
+                    </div>
+                    <div class="entry-content">
+                        Added a new camera test convar "dota_camera_alternative" that takes a number input for different
+                        <br>
+                        camera setting configurations. This convar will only be around short term and the input mappings
+                        <br>
+                        may change.
+                        <br clear="left">
+                    </div>
+                <div class="dota_rule"></div>
+                    <h2 class="entry-content">
+                        Dota 2 Update - June 5th, 2019
+                    </h2>
+                    <div class="entry-meta">
+                        June 5, 2019, Valve
+                    </div>
+                    <div class="entry-content">
+                        - Fixed Marksmanship's extra proc damage portion not being properly reduced by bonus armor
+                        <br clear="left">
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
