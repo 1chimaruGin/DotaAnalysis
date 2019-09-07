@@ -85,7 +85,7 @@
                     {% if player.player_slot <= 127 %}
                         <div _ngcontent-c58 class="stats__wrapper">
                             <div _ngcontent-c58 class="stats__row">
-                                <div _ngcontent-c58 class="stats__shield icon-mmr_6"></div>
+                                <div _ngcontent-c58 class="stats__shield icon-mmr_{{ player.rank_tier }}"></div>
                                     <div _ngcontent-c58 class="stats__col stats__col_player">
                                         <div _ngcontent-c58 class="player">
                                         <div _ngcontent-c58 class="player__image d2mh hero-{{ player.hero_id }}"></div>
@@ -223,7 +223,7 @@
                     {% if player.player_slot > 127 %}
                         <div _ngcontent-c58 class="stats__wrapper">
                             <div _ngcontent-c58 class="stats__row">
-                                <div _ngcontent-c58 class="stats__shield icon-mmr_6"></div>
+                                <div _ngcontent-c58 class="stats__shield icon-mmr_{{ player.rank_tier }}"></div>
                                     <div _ngcontent-c58 class="stats__col stats__col_player">
                                         <div _ngcontent-c58 class="player">
                                         <div _ngcontent-c58 class="player__image d2mh hero-{{ player.hero_id }}"></div>

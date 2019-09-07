@@ -1,4 +1,5 @@
 from django import template
+from analysis.performance_analysis import rank_tier
 import time
 
 register = template.Library()

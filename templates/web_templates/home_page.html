@@ -44,9 +44,9 @@
             <div _ngcontent-c30 class="resume">
                 <div _ngcontent-c30 class="resume__content">
                     <h2 _ngcontent-c30 class="resume__title">On average, {% if same_week %}{{ prev_week | print_week }}{% else %}{{ prev_week | print_week }} {{ prev_week | print_month }}{% endif %} - {{ this_week | print_week }} {{ this_week | print_month }}, you played like
-                    <span style="color: rgb(135, 225, 110);"> Divine </span>
+                    <span style="color: rgb(135, 225, 110);"> Legend </span>
                     </h2>
-                    <div _ngcontent-c38 class="resume__shield icon-mmr_7"></div>
+                    <div _ngcontent-c38 class="resume__shield icon-mmr_{{ avg_rank }}"></div>
                 </div>
             </div>
             <div _ngcontent-c30 class="resume__values-wrapper">
@@ -257,7 +257,7 @@
 
                     </div>
                     <div _ngcontent-c36 class="matches__col matches__col_shield">
-                        <div _ngcontent-c36 class="matches__shield icon-mmr_7"></div>
+                        <div _ngcontent-c36 class="matches__shield icon-mmr_{{ match.rank_tier }}"></div>
                     </div>
                 </a>
             </div>
